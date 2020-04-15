@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Learning Flask</title>
+{% endblock %}
+
+{% block body %}
+    <h1>Hello World</h1> {{super()}}
+    {% include 'contact.html' %}
+{% endblock %}
