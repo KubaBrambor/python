@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_45cc2c954b4b419b8daa4b5fc7092096 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_45cc2c954b4b419b8daa4b5fc7092096" ></div>
+        
+</body>
+<script>    
+    
+            var map_45cc2c954b4b419b8daa4b5fc7092096 = L.map(
+                "map_45cc2c954b4b419b8daa4b5fc7092096",
+                {
+                    center: [51.130197, 16.961561],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e921cdff0438464484654621d025c6c6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_45cc2c954b4b419b8daa4b5fc7092096);
+        
+    
+            var feature_group_3c8aeade7c3c48499cc998ca596d7686 = L.featureGroup(
+                {}
+            ).addTo(map_45cc2c954b4b419b8daa4b5fc7092096);
+        
+    
+            var marker_630565c5649444398497b5c6b380c0d1 = L.marker(
+                [51.130197, 16.961561],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_46f4e715da414aefbfda9885b67886bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-home", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_630565c5649444398497b5c6b380c0d1.setIcon(icon_46f4e715da414aefbfda9885b67886bd);
+        
+    
+        var popup_2d05542253184490bc94c2769dae463b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9ca20274e7b4ae581a6872d9735556d = $(`<div id="html_a9ca20274e7b4ae581a6872d9735556d" style="width: 100.0%; height: 100.0%;">Nasz dom :-)</div>`)[0];
+            popup_2d05542253184490bc94c2769dae463b.setContent(html_a9ca20274e7b4ae581a6872d9735556d);
+        
+
+        marker_630565c5649444398497b5c6b380c0d1.bindPopup(popup_2d05542253184490bc94c2769dae463b)
+        ;
+
+        
+    
+    
+            var marker_e3eef2b39f614bd4a04bf6ab8de254b5 = L.marker(
+                [51.072835, 16.989717],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_c133ea5b16ed480c99f03f9f4db91743 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-home", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e3eef2b39f614bd4a04bf6ab8de254b5.setIcon(icon_c133ea5b16ed480c99f03f9f4db91743);
+        
+    
+        var popup_d181513f5ba44b5abfe606e82a0fa277 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ce114a885c34abdb514d14c599534fd = $(`<div id="html_9ce114a885c34abdb514d14c599534fd" style="width: 100.0%; height: 100.0%;">Dom Mamy Kuby</div>`)[0];
+            popup_d181513f5ba44b5abfe606e82a0fa277.setContent(html_9ce114a885c34abdb514d14c599534fd);
+        
+
+        marker_e3eef2b39f614bd4a04bf6ab8de254b5.bindPopup(popup_d181513f5ba44b5abfe606e82a0fa277)
+        ;
+
+        
+    
+    
+            var marker_1beef81c68484f249edcd8b57fddec48 = L.marker(
+                [51.061847, 16.978033],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_a71b2057a4ff42e2813666851aba3efd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-home", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1beef81c68484f249edcd8b57fddec48.setIcon(icon_a71b2057a4ff42e2813666851aba3efd);
+        
+    
+        var popup_460df09277ff4fb4a2de72040eed9535 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_018bc11af2d44318ac964fe5f466e34c = $(`<div id="html_018bc11af2d44318ac964fe5f466e34c" style="width: 100.0%; height: 100.0%;">Dom Taty Kuby</div>`)[0];
+            popup_460df09277ff4fb4a2de72040eed9535.setContent(html_018bc11af2d44318ac964fe5f466e34c);
+        
+
+        marker_1beef81c68484f249edcd8b57fddec48.bindPopup(popup_460df09277ff4fb4a2de72040eed9535)
+        ;
+
+        
+    
+    
+            var marker_1f4895fcbf0e491195d7ccebd793b59e = L.marker(
+                [51.098237, 17.668597],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_842527e22dd840f4a2244d891527ce62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-home", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1f4895fcbf0e491195d7ccebd793b59e.setIcon(icon_842527e22dd840f4a2244d891527ce62);
+        
+    
+        var popup_83dbbc14e5514cc18a6611a46421c73a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bea5bbe718e641608264d70b781bac84 = $(`<div id="html_bea5bbe718e641608264d70b781bac84" style="width: 100.0%; height: 100.0%;">Dom Rodziców Izy</div>`)[0];
+            popup_83dbbc14e5514cc18a6611a46421c73a.setContent(html_bea5bbe718e641608264d70b781bac84);
+        
+
+        marker_1f4895fcbf0e491195d7ccebd793b59e.bindPopup(popup_83dbbc14e5514cc18a6611a46421c73a)
+        ;
+
+        
+    
+    
+            var marker_da667dd259ce4173b5ecb3f8f9af15f9 = L.marker(
+                [51.043037, 16.198196],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_a8c2f0bf561c4f069b44a24eeee3a3f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-home", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_da667dd259ce4173b5ecb3f8f9af15f9.setIcon(icon_a8c2f0bf561c4f069b44a24eeee3a3f1);
+        
+    
+        var popup_9504fbfc1d124837a8a4c39bab0776c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de4c937bf4ce41fc8e7b712423c647f0 = $(`<div id="html_de4c937bf4ce41fc8e7b712423c647f0" style="width: 100.0%; height: 100.0%;">Dom Dziadków Kuby</div>`)[0];
+            popup_9504fbfc1d124837a8a4c39bab0776c9.setContent(html_de4c937bf4ce41fc8e7b712423c647f0);
+        
+
+        marker_da667dd259ce4173b5ecb3f8f9af15f9.bindPopup(popup_9504fbfc1d124837a8a4c39bab0776c9)
+        ;
+
+        
+    
+    
+            var marker_b704ce2bc4c44dba9bfa23003dc42885 = L.marker(
+                [48.7767982, -121.810997],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_9c8658f5a97742099498bb1e5ab1c4d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b704ce2bc4c44dba9bfa23003dc42885.setIcon(icon_9c8658f5a97742099498bb1e5ab1c4d1);
+        
+    
+        var popup_7f1b05df81d840989df7af4c4756a077 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f2be7b73a3c43a3abeb8f18484a766a = $(`<div id="html_1f2be7b73a3c43a3abeb8f18484a766a" style="width: 100.0%; height: 100.0%;">Name:Baker   Status:Historical   Elev:3285.0</div>`)[0];
+            popup_7f1b05df81d840989df7af4c4756a077.setContent(html_1f2be7b73a3c43a3abeb8f18484a766a);
+        
+
+        marker_b704ce2bc4c44dba9bfa23003dc42885.bindPopup(popup_7f1b05df81d840989df7af4c4756a077)
+        ;
+
+        
+    
+    
+            var marker_b4db6f0835f04997b6f462d2b02c1e7a = L.marker(
+                [48.1118011, -121.1110001],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_dff252629e6644cda804e1e3350abd6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b4db6f0835f04997b6f462d2b02c1e7a.setIcon(icon_dff252629e6644cda804e1e3350abd6d);
+        
+    
+        var popup_1c97a0fb4d47400bb1b6bbc367ff7fa2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e80cc820262e4e27b7cf37baebbd6a7b = $(`<div id="html_e80cc820262e4e27b7cf37baebbd6a7b" style="width: 100.0%; height: 100.0%;">Name:Glacier Peak   Status:Tephrochronology   Elev:3213.0</div>`)[0];
+            popup_1c97a0fb4d47400bb1b6bbc367ff7fa2.setContent(html_e80cc820262e4e27b7cf37baebbd6a7b);
+        
+
+        marker_b4db6f0835f04997b6f462d2b02c1e7a.bindPopup(popup_1c97a0fb4d47400bb1b6bbc367ff7fa2)
+        ;
+
+        
+    
+    
+            var marker_4a8d344db9b94d7aa481af38c7de1cad = L.marker(
+                [46.8698006, -121.7509995],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_5b248d06069143b99edaae8c1410e72a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4a8d344db9b94d7aa481af38c7de1cad.setIcon(icon_5b248d06069143b99edaae8c1410e72a);
+        
+    
+        var popup_e3759da112ae46bebb87092197e9f86c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a77d761ff7c84c67868e8be29b9c0feb = $(`<div id="html_a77d761ff7c84c67868e8be29b9c0feb" style="width: 100.0%; height: 100.0%;">Name:Rainier   Status:Dendrochronology   Elev:4392.0</div>`)[0];
+            popup_e3759da112ae46bebb87092197e9f86c.setContent(html_a77d761ff7c84c67868e8be29b9c0feb);
+        
+
+        marker_4a8d344db9b94d7aa481af38c7de1cad.bindPopup(popup_e3759da112ae46bebb87092197e9f86c)
+        ;
+
+        
+    
+    
+            var marker_7239be2ac4914055b0ff4372ba63019b = L.marker(
+                [46.1997986, -122.1809998],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_0d6863c0cd2a4140b46cc2c3bacdfb51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7239be2ac4914055b0ff4372ba63019b.setIcon(icon_0d6863c0cd2a4140b46cc2c3bacdfb51);
+        
+    
+        var popup_7f90385ebf4647e0a6ccb9ec69387db6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bacad9e9350643e6b6a1c071364e8c1b = $(`<div id="html_bacad9e9350643e6b6a1c071364e8c1b" style="width: 100.0%; height: 100.0%;">Name:St. Helens   Status:Historical   Elev:2549.0</div>`)[0];
+            popup_7f90385ebf4647e0a6ccb9ec69387db6.setContent(html_bacad9e9350643e6b6a1c071364e8c1b);
+        
+
+        marker_7239be2ac4914055b0ff4372ba63019b.bindPopup(popup_7f90385ebf4647e0a6ccb9ec69387db6)
+        ;
+
+        
+    
+    
+            var marker_15c5839e71084c35955aa650b23cc5ad = L.marker(
+                [46.20579910000001, -121.4909973],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_72c3586e58df4990b4341c9780ca3c6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_15c5839e71084c35955aa650b23cc5ad.setIcon(icon_72c3586e58df4990b4341c9780ca3c6a);
+        
+    
+        var popup_56b4a489847444fd955dd017d94c3198 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_126238177e46413ea2f218b23b9c7242 = $(`<div id="html_126238177e46413ea2f218b23b9c7242" style="width: 100.0%; height: 100.0%;">Name:Adams   Status:Tephrochronology   Elev:3742.0</div>`)[0];
+            popup_56b4a489847444fd955dd017d94c3198.setContent(html_126238177e46413ea2f218b23b9c7242);
+        
+
+        marker_15c5839e71084c35955aa650b23cc5ad.bindPopup(popup_56b4a489847444fd955dd017d94c3198)
+        ;
+
+        
+    
+    
+            var marker_495f307e9b3a435d9fabeab4aee9a411 = L.marker(
+                [45.8797989, -122.0810013],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_3b320b2bae7c44edbcefa87d39990b2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_495f307e9b3a435d9fabeab4aee9a411.setIcon(icon_3b320b2bae7c44edbcefa87d39990b2e);
+        
+    
+        var popup_b11e88ad881c4f7db29ca0480ba513f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bc216a4c11b4ddc996780b3d4b3af13 = $(`<div id="html_7bc216a4c11b4ddc996780b3d4b3af13" style="width: 100.0%; height: 100.0%;">Name:West Crater   Status:Radiocarbon   Elev:1329.0</div>`)[0];
+            popup_b11e88ad881c4f7db29ca0480ba513f3.setContent(html_7bc216a4c11b4ddc996780b3d4b3af13);
+        
+
+        marker_495f307e9b3a435d9fabeab4aee9a411.bindPopup(popup_b11e88ad881c4f7db29ca0480ba513f3)
+        ;
+
+        
+    
+    
+            var marker_ce3e92d9d75b4f3db11e6261f72a299c = L.marker(
+                [45.929798100000006, -121.8209991],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_82661ad6ffdc486c82c80d698eef710f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ce3e92d9d75b4f3db11e6261f72a299c.setIcon(icon_82661ad6ffdc486c82c80d698eef710f);
+        
+    
+        var popup_1f387ffb16f94e3195c2db389bf036a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_260f390f22ec49c1aae5f90e65a997bf = $(`<div id="html_260f390f22ec49c1aae5f90e65a997bf" style="width: 100.0%; height: 100.0%;">Name:Indian Heaven   Status:Radiocarbon   Elev:1806.0</div>`)[0];
+            popup_1f387ffb16f94e3195c2db389bf036a5.setContent(html_260f390f22ec49c1aae5f90e65a997bf);
+        
+
+        marker_ce3e92d9d75b4f3db11e6261f72a299c.bindPopup(popup_1f387ffb16f94e3195c2db389bf036a5)
+        ;
+
+        
+    
+    
+            var marker_c7e78de999c14ff8b0f46ba45f2ff56f = L.marker(
+                [45.3737984, -121.6910019],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_ce41dfe7c0524e1ba5ba6e381ea37381 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c7e78de999c14ff8b0f46ba45f2ff56f.setIcon(icon_ce41dfe7c0524e1ba5ba6e381ea37381);
+        
+    
+        var popup_cb7ba77a2826425cb160832abff0d245 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd255ff29b40470c95daedf74dcbf23b = $(`<div id="html_cd255ff29b40470c95daedf74dcbf23b" style="width: 100.0%; height: 100.0%;">Name:Hood   Status:Historical   Elev:3426.0</div>`)[0];
+            popup_cb7ba77a2826425cb160832abff0d245.setContent(html_cd255ff29b40470c95daedf74dcbf23b);
+        
+
+        marker_c7e78de999c14ff8b0f46ba45f2ff56f.bindPopup(popup_cb7ba77a2826425cb160832abff0d245)
+        ;
+
+        
+    
+    
+            var marker_31dcc76a7b4049c6b0dce9de0362f15a = L.marker(
+                [44.691799200000005, -121.8010025],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_5b7a815ea0eb487c9bcb884228a1114d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_31dcc76a7b4049c6b0dce9de0362f15a.setIcon(icon_5b7a815ea0eb487c9bcb884228a1114d);
+        
+    
+        var popup_6a85a1767eef437faad19c06c1685a83 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1af8f969469849648b8af43ecb09226e = $(`<div id="html_1af8f969469849648b8af43ecb09226e" style="width: 100.0%; height: 100.0%;">Name:Jefferson   Status:Varve Count   Elev:3199.0</div>`)[0];
+            popup_6a85a1767eef437faad19c06c1685a83.setContent(html_1af8f969469849648b8af43ecb09226e);
+        
+
+        marker_31dcc76a7b4049c6b0dce9de0362f15a.bindPopup(popup_6a85a1767eef437faad19c06c1685a83)
+        ;
+
+        
+    
+    
+            var marker_fe7d464800934532a7f006168fc04751 = L.marker(
+                [44.4197998, -121.7710037],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_b6978a50775f4156af99bae33c4c7ec9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fe7d464800934532a7f006168fc04751.setIcon(icon_b6978a50775f4156af99bae33c4c7ec9);
+        
+    
+        var popup_a440ace6a702432e91d7a8d5cd0b1dd8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66851fa7ace94b5dad925ee64963b9cb = $(`<div id="html_66851fa7ace94b5dad925ee64963b9cb" style="width: 100.0%; height: 100.0%;">Name:Blue Lake Crater   Status:Radiocarbon   Elev:1230.0</div>`)[0];
+            popup_a440ace6a702432e91d7a8d5cd0b1dd8.setContent(html_66851fa7ace94b5dad925ee64963b9cb);
+        
+
+        marker_fe7d464800934532a7f006168fc04751.bindPopup(popup_a440ace6a702432e91d7a8d5cd0b1dd8)
+        ;
+
+        
+    
+    
+            var marker_963f30fa8a70484da591644df1825464 = L.marker(
+                [44.3797989, -121.9309998],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_aebd98a1a9894667b52b27a6cb6431d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_963f30fa8a70484da591644df1825464.setIcon(icon_aebd98a1a9894667b52b27a6cb6431d4);
+        
+    
+        var popup_accbd9a66ddd456a8e9f1d3fd2ff9d50 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e11117eef64b4006896f353af48ff4c5 = $(`<div id="html_e11117eef64b4006896f353af48ff4c5" style="width: 100.0%; height: 100.0%;">Name:Sand Mountain Field   Status:Radiocarbon   Elev:1664.0</div>`)[0];
+            popup_accbd9a66ddd456a8e9f1d3fd2ff9d50.setContent(html_e11117eef64b4006896f353af48ff4c5);
+        
+
+        marker_963f30fa8a70484da591644df1825464.bindPopup(popup_accbd9a66ddd456a8e9f1d3fd2ff9d50)
+        ;
+
+        
+    
+    
+            var marker_b07bc43fc7c94e02abdfb46b2e35ca55 = L.marker(
+                [44.331798600000006, -121.8310013],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_ce29856517d24676989bcc16ffd00a07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b07bc43fc7c94e02abdfb46b2e35ca55.setIcon(icon_ce29856517d24676989bcc16ffd00a07);
+        
+    
+        var popup_83462f3b5cde4908ada7d11d1f867bbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a78e46e014264d2399c462b5a98e49b1 = $(`<div id="html_a78e46e014264d2399c462b5a98e49b1" style="width: 100.0%; height: 100.0%;">Name:Washington   Status:Radiocarbon   Elev:2376.0</div>`)[0];
+            popup_83462f3b5cde4908ada7d11d1f867bbb.setContent(html_a78e46e014264d2399c462b5a98e49b1);
+        
+
+        marker_b07bc43fc7c94e02abdfb46b2e35ca55.bindPopup(popup_83462f3b5cde4908ada7d11d1f867bbb)
+        ;
+
+        
+    
+    
+            var marker_0c6a129da0db49129dd1d6948e957d5b = L.marker(
+                [44.2848015, -121.8410034],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_c35edd5cae5a473786ba4a2b416774f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0c6a129da0db49129dd1d6948e957d5b.setIcon(icon_c35edd5cae5a473786ba4a2b416774f5);
+        
+    
+        var popup_c09c7b3fb4b04188a4dae84ed5183b1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ca899e8fe814b70ae09f450ef1cb3b8 = $(`<div id="html_2ca899e8fe814b70ae09f450ef1cb3b8" style="width: 100.0%; height: 100.0%;">Name:Belknap   Status:Radiocarbon   Elev:2095.0</div>`)[0];
+            popup_c09c7b3fb4b04188a4dae84ed5183b1c.setContent(html_2ca899e8fe814b70ae09f450ef1cb3b8);
+        
+
+        marker_0c6a129da0db49129dd1d6948e957d5b.bindPopup(popup_c09c7b3fb4b04188a4dae84ed5183b1c)
+        ;
+
+        
+    
+    
+            var marker_3c7a6ea8c52b40c99e87bca1ac8d3988 = L.marker(
+                [44.1697998, -121.7710037],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_e2587817c7c042b0bddcb64586f2b3a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3c7a6ea8c52b40c99e87bca1ac8d3988.setIcon(icon_e2587817c7c042b0bddcb64586f2b3a7);
+        
+    
+        var popup_2255fa447fd2473a8c7415e58fa1ffa1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4dc2f603264d4d0091ada9efe3c1aab6 = $(`<div id="html_4dc2f603264d4d0091ada9efe3c1aab6" style="width: 100.0%; height: 100.0%;">Name:North Sister Field   Status:Radiocarbon   Elev:3074.0</div>`)[0];
+            popup_2255fa447fd2473a8c7415e58fa1ffa1.setContent(html_4dc2f603264d4d0091ada9efe3c1aab6);
+        
+
+        marker_3c7a6ea8c52b40c99e87bca1ac8d3988.bindPopup(popup_2255fa447fd2473a8c7415e58fa1ffa1)
+        ;
+
+        
+    
+    
+            var marker_6b86d7d774b545dfbe5ab4a785918c0b = L.marker(
+                [44.099800099999996, -121.7710037],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_e3bd9f1e7ed84031816067192fa296f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6b86d7d774b545dfbe5ab4a785918c0b.setIcon(icon_e3bd9f1e7ed84031816067192fa296f4);
+        
+    
+        var popup_8b0ddb6dbe24405189c6a2ecdc7f5bb0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82c9d07124cd4de98358072627d62943 = $(`<div id="html_82c9d07124cd4de98358072627d62943" style="width: 100.0%; height: 100.0%;">Name:South Sister   Status:Radiocarbon   Elev:3157.0</div>`)[0];
+            popup_8b0ddb6dbe24405189c6a2ecdc7f5bb0.setContent(html_82c9d07124cd4de98358072627d62943);
+        
+
+        marker_6b86d7d774b545dfbe5ab4a785918c0b.bindPopup(popup_8b0ddb6dbe24405189c6a2ecdc7f5bb0)
+        ;
+
+        
+    
+    
+            var marker_94b631bd08f746a6ae25d8066a60595f = L.marker(
+                [43.978801700000005, -121.6809998],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_ae683392259340f19cbae1c727947331 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_94b631bd08f746a6ae25d8066a60595f.setIcon(icon_ae683392259340f19cbae1c727947331);
+        
+    
+        var popup_876a31afbcb24d7f836fd5a64a359d14 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08ab229348364d8e90bcccf006c9f639 = $(`<div id="html_08ab229348364d8e90bcccf006c9f639" style="width: 100.0%; height: 100.0%;">Name:Bachelor   Status:Tephrochronology   Elev:2763.0</div>`)[0];
+            popup_876a31afbcb24d7f836fd5a64a359d14.setContent(html_08ab229348364d8e90bcccf006c9f639);
+        
+
+        marker_94b631bd08f746a6ae25d8066a60595f.bindPopup(popup_876a31afbcb24d7f836fd5a64a359d14)
+        ;
+
+        
+    
+    
+            var marker_6b2cd813b49e45a187a2262b526b2d9d = L.marker(
+                [43.7218018, -121.2210007],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_c3b99be2e68e43e6a9417a45f7691c8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6b2cd813b49e45a187a2262b526b2d9d.setIcon(icon_c3b99be2e68e43e6a9417a45f7691c8c);
+        
+    
+        var popup_0c51779c5865472b8dd9b4d09f3ddfd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e18a7387a2a6457890a07eddae8085f4 = $(`<div id="html_e18a7387a2a6457890a07eddae8085f4" style="width: 100.0%; height: 100.0%;">Name:Newberry Volcano   Status:Radiocarbon   Elev:2434.0</div>`)[0];
+            popup_0c51779c5865472b8dd9b4d09f3ddfd9.setContent(html_e18a7387a2a6457890a07eddae8085f4);
+        
+
+        marker_6b2cd813b49e45a187a2262b526b2d9d.bindPopup(popup_0c51779c5865472b8dd9b4d09f3ddfd9)
+        ;
+
+        
+    
+    
+            var marker_94fb72151f584c1183dd99dfd3bddb5f = L.marker(
+                [43.569801299999995, -121.8209991],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_b53c56cb4e544fabbc4238058926de54 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_94fb72151f584c1183dd99dfd3bddb5f.setIcon(icon_b53c56cb4e544fabbc4238058926de54);
+        
+    
+        var popup_d46f4bb9ae7648a281ebc00568427e63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5fbc2e6f2dc41489cc25bbc50f05dbb = $(`<div id="html_c5fbc2e6f2dc41489cc25bbc50f05dbb" style="width: 100.0%; height: 100.0%;">Name:Davis Lake   Status:Radiocarbon   Elev:2163.0</div>`)[0];
+            popup_d46f4bb9ae7648a281ebc00568427e63.setContent(html_c5fbc2e6f2dc41489cc25bbc50f05dbb);
+        
+
+        marker_94fb72151f584c1183dd99dfd3bddb5f.bindPopup(popup_d46f4bb9ae7648a281ebc00568427e63)
+        ;
+
+        
+    
+    
+            var marker_0df85c9c8c9a4c6da7eacf0491f32b6c = L.marker(
+                [43.5119019, -120.8610001],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_7d67f953eac74db19e83dda09246e72a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0df85c9c8c9a4c6da7eacf0491f32b6c.setIcon(icon_7d67f953eac74db19e83dda09246e72a);
+        
+    
+        var popup_8551b57a29c040bc81d2912123e72091 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18c07047f710406cb408a67c1e9ab692 = $(`<div id="html_18c07047f710406cb408a67c1e9ab692" style="width: 100.0%; height: 100.0%;">Name:Devils Garden   Status:Holocene?   Elev:1698.0</div>`)[0];
+            popup_8551b57a29c040bc81d2912123e72091.setContent(html_18c07047f710406cb408a67c1e9ab692);
+        
+
+        marker_0df85c9c8c9a4c6da7eacf0491f32b6c.bindPopup(popup_8551b57a29c040bc81d2912123e72091)
+        ;
+
+        
+    
+    
+            var marker_7b638f2553f7434c9e2ea69ba21d5ccd = L.marker(
+                [43.240798999999996, -122.10099790000001],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_a1604bdedaa14c888d000659ff5ba246 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7b638f2553f7434c9e2ea69ba21d5ccd.setIcon(icon_a1604bdedaa14c888d000659ff5ba246);
+        
+    
+        var popup_791a5c2a9b01474196b5cf2f8775abfa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c7f29fdf4a2408da646a7d84717b86b = $(`<div id="html_4c7f29fdf4a2408da646a7d84717b86b" style="width: 100.0%; height: 100.0%;">Name:Cinnamon Butte   Status:Holocene?   Elev:1956.0</div>`)[0];
+            popup_791a5c2a9b01474196b5cf2f8775abfa.setContent(html_4c7f29fdf4a2408da646a7d84717b86b);
+        
+
+        marker_7b638f2553f7434c9e2ea69ba21d5ccd.bindPopup(popup_791a5c2a9b01474196b5cf2f8775abfa)
+        ;
+
+        
+    
+    
+            var marker_401ba6d30594470782c42e0503f3a9f4 = L.marker(
+                [43.471900899999994, -120.7509995],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_054ba868f5164ae4913569cce34acd7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_401ba6d30594470782c42e0503f3a9f4.setIcon(icon_054ba868f5164ae4913569cce34acd7f);
+        
+    
+        var popup_fdc4ee18bc764eb2900316b5af084daa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8dc8ac7cd3464bd380be5436175345dc = $(`<div id="html_8dc8ac7cd3464bd380be5436175345dc" style="width: 100.0%; height: 100.0%;">Name:Squaw Ridge Lava Field   Status:Holocene?   Elev:1711.0</div>`)[0];
+            popup_fdc4ee18bc764eb2900316b5af084daa.setContent(html_8dc8ac7cd3464bd380be5436175345dc);
+        
+
+        marker_401ba6d30594470782c42e0503f3a9f4.bindPopup(popup_fdc4ee18bc764eb2900316b5af084daa)
+        ;
+
+        
+    
+    
+            var marker_c65617ee2730410e8385859757a86241 = L.marker(
+                [43.3609009, -120.6610031],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_7a0543d5c791412a8e8e2fb7de4b4a4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c65617ee2730410e8385859757a86241.setIcon(icon_7a0543d5c791412a8e8e2fb7de4b4a4a);
+        
+    
+        var popup_7912483c76e240bba831d0d926af0b9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3485ae48e2c744a9a00f730ff573b3a7 = $(`<div id="html_3485ae48e2c744a9a00f730ff573b3a7" style="width: 100.0%; height: 100.0%;">Name:Four Craters Lava Field   Status:Holocene?   Elev:1501.0</div>`)[0];
+            popup_7912483c76e240bba831d0d926af0b9b.setContent(html_3485ae48e2c744a9a00f730ff573b3a7);
+        
+
+        marker_c65617ee2730410e8385859757a86241.bindPopup(popup_7912483c76e240bba831d0d926af0b9b)
+        ;
+
+        
+    
+    
+            var marker_df5a0f24d1634017a2e829f1da8a632c = L.marker(
+                [42.9299011, -122.1210022],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_691a09df4b22470da7dcbe66b870fcfe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_df5a0f24d1634017a2e829f1da8a632c.setIcon(icon_691a09df4b22470da7dcbe66b870fcfe);
+        
+    
+        var popup_9dc2fd2d5ad44b5bbeaadca8b087619c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42d5d313bae54a4f8d6b4d50df33d17f = $(`<div id="html_42d5d313bae54a4f8d6b4d50df33d17f" style="width: 100.0%; height: 100.0%;">Name:Crater Lake   Status:Radiocarbon   Elev:2487.0</div>`)[0];
+            popup_9dc2fd2d5ad44b5bbeaadca8b087619c.setContent(html_42d5d313bae54a4f8d6b4d50df33d17f);
+        
+
+        marker_df5a0f24d1634017a2e829f1da8a632c.bindPopup(popup_9dc2fd2d5ad44b5bbeaadca8b087619c)
+        ;
+
+        
+    
+    
+            var marker_2d37f4177e274cc482626ef476fe5c37 = L.marker(
+                [44.4299011, -110.6709976],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_e7e78ef1a7f144aa95c761dffed6f05f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2d37f4177e274cc482626ef476fe5c37.setIcon(icon_e7e78ef1a7f144aa95c761dffed6f05f);
+        
+    
+        var popup_777e87a4171f4cdbb9bcaa051dc883c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8743404c4a54e61acd4fbae6092ec1b = $(`<div id="html_b8743404c4a54e61acd4fbae6092ec1b" style="width: 100.0%; height: 100.0%;">Name:Yellowstone   Status:Tephrochronology   Elev:2805.0</div>`)[0];
+            popup_777e87a4171f4cdbb9bcaa051dc883c2.setContent(html_b8743404c4a54e61acd4fbae6092ec1b);
+        
+
+        marker_2d37f4177e274cc482626ef476fe5c37.bindPopup(popup_777e87a4171f4cdbb9bcaa051dc883c2)
+        ;
+
+        
+    
+    
+            var marker_309bb76e304d4b0aa88f89ff5570b979 = L.marker(
+                [43.0998993, -118.7509995],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_1e6aa711722541e39535c5791828502e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_309bb76e304d4b0aa88f89ff5570b979.setIcon(icon_1e6aa711722541e39535c5791828502e);
+        
+    
+        var popup_30ca394a82374a5d9cffe1bcf6294a2b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a7e15f3278b45a79c039c52c153dccc = $(`<div id="html_8a7e15f3278b45a79c039c52c153dccc" style="width: 100.0%; height: 100.0%;">Name:Diamond Craters   Status:Holocene?   Elev:1435.0</div>`)[0];
+            popup_30ca394a82374a5d9cffe1bcf6294a2b.setContent(html_8a7e15f3278b45a79c039c52c153dccc);
+        
+
+        marker_309bb76e304d4b0aa88f89ff5570b979.bindPopup(popup_30ca394a82374a5d9cffe1bcf6294a2b)
+        ;
+
+        
+    
+    
+            var marker_2e78f193952b4fcba3e10e9ddff03ebe = L.marker(
+                [43.1498985, -117.4710007],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_75bf29bda8c04ed9b520bab3fdbb434f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2e78f193952b4fcba3e10e9ddff03ebe.setIcon(icon_75bf29bda8c04ed9b520bab3fdbb434f);
+        
+    
+        var popup_58a8dedec97d4693b8dc9ac0966f15e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd5cef32aa93424698c31320dc55328c = $(`<div id="html_bd5cef32aa93424698c31320dc55328c" style="width: 100.0%; height: 100.0%;">Name:Jordan Craters   Status:Radiocarbon   Elev:1473.0</div>`)[0];
+            popup_58a8dedec97d4693b8dc9ac0966f15e8.setContent(html_bd5cef32aa93424698c31320dc55328c);
+        
+
+        marker_2e78f193952b4fcba3e10e9ddff03ebe.bindPopup(popup_58a8dedec97d4693b8dc9ac0966f15e8)
+        ;
+
+        
+    
+    
+            var marker_3550dfd2321c4c9fb8d918d5806beae3 = L.marker(
+                [42.9999008, -117.8010025],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_15025382d4044f1994040f91a3e0abc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3550dfd2321c4c9fb8d918d5806beae3.setIcon(icon_15025382d4044f1994040f91a3e0abc6);
+        
+    
+        var popup_5fcc7b59db7c401aa0baaaac84246826 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bfa5f83e4ac04041ae84fca93fa2f6b0 = $(`<div id="html_bfa5f83e4ac04041ae84fca93fa2f6b0" style="width: 100.0%; height: 100.0%;">Name:Saddle Butte   Status:Holocene?   Elev:1700.0</div>`)[0];
+            popup_5fcc7b59db7c401aa0baaaac84246826.setContent(html_bfa5f83e4ac04041ae84fca93fa2f6b0);
+        
+
+        marker_3550dfd2321c4c9fb8d918d5806beae3.bindPopup(popup_5fcc7b59db7c401aa0baaaac84246826)
+        ;
+
+        
+    
+    
+            var marker_a29bdf79490c46b698029488a5159c22 = L.marker(
+                [43.419899, -113.5009995],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_589634b5bfbb46dbb1a9f9dffdd472f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a29bdf79490c46b698029488a5159c22.setIcon(icon_589634b5bfbb46dbb1a9f9dffdd472f3);
+        
+    
+        var popup_6fd6b1d002214c1581579401dce7813e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6a051c5da9e4b4abe32cd2a361c7b41 = $(`<div id="html_b6a051c5da9e4b4abe32cd2a361c7b41" style="width: 100.0%; height: 100.0%;">Name:Craters of the Moon   Status:Radiocarbon   Elev:2005.0</div>`)[0];
+            popup_6fd6b1d002214c1581579401dce7813e.setContent(html_b6a051c5da9e4b4abe32cd2a361c7b41);
+        
+
+        marker_a29bdf79490c46b698029488a5159c22.bindPopup(popup_6fd6b1d002214c1581579401dce7813e)
+        ;
+
+        
+    
+    
+            var marker_a110e20b4be54e519554efeb3fac456b = L.marker(
+                [43.4999008, -112.45099640000001],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_17f73c8c719e45a5a3db8290a993801b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a110e20b4be54e519554efeb3fac456b.setIcon(icon_17f73c8c719e45a5a3db8290a993801b);
+        
+    
+        var popup_47f5403c74ed48c19f9e81f32e58e29d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c25cf9ce45d749f3b9cb58435ce1de87 = $(`<div id="html_c25cf9ce45d749f3b9cb58435ce1de87" style="width: 100.0%; height: 100.0%;">Name:Hell Half Acre   Status:Radiocarbon   Elev:1631.0</div>`)[0];
+            popup_47f5403c74ed48c19f9e81f32e58e29d.setContent(html_c25cf9ce45d749f3b9cb58435ce1de87);
+        
+
+        marker_a110e20b4be54e519554efeb3fac456b.bindPopup(popup_47f5403c74ed48c19f9e81f32e58e29d)
+        ;
+
+        
+    
+    
+            var marker_4bfbf596636b4d30840f6f40c76daa34 = L.marker(
+                [43.1799011, -114.35099790000001],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_7cd3172cc1cb4945a417c2eaa3dbe8db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4bfbf596636b4d30840f6f40c76daa34.setIcon(icon_7cd3172cc1cb4945a417c2eaa3dbe8db);
+        
+    
+        var popup_792043d51a8e4016976677895c7d9e28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_523d1e3cb328454d9cc78c57ba80da3a = $(`<div id="html_523d1e3cb328454d9cc78c57ba80da3a" style="width: 100.0%; height: 100.0%;">Name:Shoshone Lava Field   Status:Holocene   Elev:1478.0</div>`)[0];
+            popup_792043d51a8e4016976677895c7d9e28.setContent(html_523d1e3cb328454d9cc78c57ba80da3a);
+        
+
+        marker_4bfbf596636b4d30840f6f40c76daa34.bindPopup(popup_792043d51a8e4016976677895c7d9e28)
+        ;
+
+        
+    
+    
+            var marker_186ee2f9950348b48704a0d3cdeb53b9 = L.marker(
+                [42.605899799999996, -117.5810013],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_12110f6fb3144f5eb3d7f0c6053ed11e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_186ee2f9950348b48704a0d3cdeb53b9.setIcon(icon_12110f6fb3144f5eb3d7f0c6053ed11e);
+        
+    
+        var popup_ed5b1156a8224530a97b73175769da46 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e062df910ed84954bd04b37b48377820 = $(`<div id="html_e062df910ed84954bd04b37b48377820" style="width: 100.0%; height: 100.0%;">Name:Jackies Butte   Status:Holocene?   Elev:1418.0</div>`)[0];
+            popup_ed5b1156a8224530a97b73175769da46.setContent(html_e062df910ed84954bd04b37b48377820);
+        
+
+        marker_186ee2f9950348b48704a0d3cdeb53b9.bindPopup(popup_ed5b1156a8224530a97b73175769da46)
+        ;
+
+        
+    
+    
+            var marker_1480ba5fbd2d4a869abacdf44e0daf0a = L.marker(
+                [41.579898799999995, -121.5709991],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_61bb03354996422aa42203dfb4b95376 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1480ba5fbd2d4a869abacdf44e0daf0a.setIcon(icon_61bb03354996422aa42203dfb4b95376);
+        
+    
+        var popup_90391d19825b4fe4a208516fa52e4f44 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61952a19f1af46ef811a257104fe25b0 = $(`<div id="html_61952a19f1af46ef811a257104fe25b0" style="width: 100.0%; height: 100.0%;">Name:Medicine Lake   Status:Radiocarbon   Elev:2412.0</div>`)[0];
+            popup_90391d19825b4fe4a208516fa52e4f44.setContent(html_61952a19f1af46ef811a257104fe25b0);
+        
+
+        marker_1480ba5fbd2d4a869abacdf44e0daf0a.bindPopup(popup_90391d19825b4fe4a208516fa52e4f44)
+        ;
+
+        
+    
+    
+            var marker_ee62c47e5c7c4bf88d3ba5480c44c7b3 = L.marker(
+                [42.8799019, -113.2210007],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_de60487376c84fb5b47f6bb230f77ac5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ee62c47e5c7c4bf88d3ba5480c44c7b3.setIcon(icon_de60487376c84fb5b47f6bb230f77ac5);
+        
+    
+        var popup_cd6670ca8e2b4f03b082bb8f23c3ef4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_efc0cb8f14214fe7923638e50c7e5438 = $(`<div id="html_efc0cb8f14214fe7923638e50c7e5438" style="width: 100.0%; height: 100.0%;">Name:Wapi Lava Field   Status:Radiocarbon   Elev:1604.0</div>`)[0];
+            popup_cd6670ca8e2b4f03b082bb8f23c3ef4a.setContent(html_efc0cb8f14214fe7923638e50c7e5438);
+        
+
+        marker_ee62c47e5c7c4bf88d3ba5480c44c7b3.bindPopup(popup_cd6670ca8e2b4f03b082bb8f23c3ef4a)
+        ;
+
+        
+    
+    
+            var marker_208c7ab03687444b98e80d735d9c7275 = L.marker(
+                [41.419899, -122.20099640000001],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_7b65207f7836454a906b6c3b46cc9f33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_208c7ab03687444b98e80d735d9c7275.setIcon(icon_7b65207f7836454a906b6c3b46cc9f33);
+        
+    
+        var popup_be450ac31b7c4fd3867bdea3250d208e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fcc8780acd0444078dcaaf12cb34c0a6 = $(`<div id="html_fcc8780acd0444078dcaaf12cb34c0a6" style="width: 100.0%; height: 100.0%;">Name:Shasta   Status:Historical   Elev:4317.0</div>`)[0];
+            popup_be450ac31b7c4fd3867bdea3250d208e.setContent(html_fcc8780acd0444078dcaaf12cb34c0a6);
+        
+
+        marker_208c7ab03687444b98e80d735d9c7275.bindPopup(popup_be450ac31b7c4fd3867bdea3250d208e)
+        ;
+
+        
+    
+    
+            var marker_ccfe8c7eeb0240568c1ce34fcbb33c78 = L.marker(
+                [41.1778984, -121.4410019],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_f253c26e35d84ac8b23536039ab7f871 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ccfe8c7eeb0240568c1ce34fcbb33c78.setIcon(icon_f253c26e35d84ac8b23536039ab7f871);
+        
+    
+        var popup_1f589336ef3f402798761f7532cfd539 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2d58b146c724fa2b63d255a98c96ee8 = $(`<div id="html_b2d58b146c724fa2b63d255a98c96ee8" style="width: 100.0%; height: 100.0%;">Name:Brushy Butte   Status:Holocene?   Elev:1174.0</div>`)[0];
+            popup_1f589336ef3f402798761f7532cfd539.setContent(html_b2d58b146c724fa2b63d255a98c96ee8);
+        
+
+        marker_ccfe8c7eeb0240568c1ce34fcbb33c78.bindPopup(popup_1f589336ef3f402798761f7532cfd539)
+        ;
+
+        
+    
+    
+            var marker_ec8fa3f70ad54ec5ae28acc322e6d36f = L.marker(
+                [40.954898799999995, -121.3610001],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_a6fca046d51f4ba8bf96e68cbddb17d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ec8fa3f70ad54ec5ae28acc322e6d36f.setIcon(icon_a6fca046d51f4ba8bf96e68cbddb17d4);
+        
+    
+        var popup_b372e240fb834750b9aeae67af3ab48e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3c9fb1e060a4304858970c4722356a5 = $(`<div id="html_e3c9fb1e060a4304858970c4722356a5" style="width: 100.0%; height: 100.0%;">Name:Big Cave   Status:Holocene?   Elev:1259.0</div>`)[0];
+            popup_b372e240fb834750b9aeae67af3ab48e.setContent(html_e3c9fb1e060a4304858970c4722356a5);
+        
+
+        marker_ec8fa3f70ad54ec5ae28acc322e6d36f.bindPopup(popup_b372e240fb834750b9aeae67af3ab48e)
+        ;
+
+        
+    
+    
+            var marker_f7feb99c7862407f9828dd27df6b5c25 = L.marker(
+                [40.77989960000001, -121.60099790000001],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_7ae40b7577f84286b1310107a6a41c79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f7feb99c7862407f9828dd27df6b5c25.setIcon(icon_7ae40b7577f84286b1310107a6a41c79);
+        
+    
+        var popup_5e80bf71b52e4fa58043297b3aeeaaaa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de6c20e86d3b428f800156736dc046d2 = $(`<div id="html_de6c20e86d3b428f800156736dc046d2" style="width: 100.0%; height: 100.0%;">Name:Twin Buttes   Status:Holocene?   Elev:1631.0</div>`)[0];
+            popup_5e80bf71b52e4fa58043297b3aeeaaaa.setContent(html_de6c20e86d3b428f800156736dc046d2);
+        
+
+        marker_f7feb99c7862407f9828dd27df6b5c25.bindPopup(popup_5e80bf71b52e4fa58043297b3aeeaaaa)
+        ;
+
+        
+    
+    
+            var marker_4bc63b1c88f0426389eef27b3534728b = L.marker(
+                [40.6799011, -121.5510025],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_3e9d93b670d145d4a61f2e5daf8fab54 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4bc63b1c88f0426389eef27b3534728b.setIcon(icon_3e9d93b670d145d4a61f2e5daf8fab54);
+        
+    
+        var popup_00828263c298468cb9a2a1ad600d9a9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a81af04ca6c44e5facbca9e3295e8751 = $(`<div id="html_a81af04ca6c44e5facbca9e3295e8751" style="width: 100.0%; height: 100.0%;">Name:Tumble Buttes   Status:Holocene?   Elev:2191.0</div>`)[0];
+            popup_00828263c298468cb9a2a1ad600d9a9a.setContent(html_a81af04ca6c44e5facbca9e3295e8751);
+        
+
+        marker_4bc63b1c88f0426389eef27b3534728b.bindPopup(popup_00828263c298468cb9a2a1ad600d9a9a)
+        ;
+
+        
+    
+    
+            var marker_5bccb83eb97043069c06a83e69b33d9a = L.marker(
+                [40.6299019, -120.8310013],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_b225f452aecc42c284a095e1b1a045ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5bccb83eb97043069c06a83e69b33d9a.setIcon(icon_b225f452aecc42c284a095e1b1a045ab);
+        
+    
+        var popup_ab145d032c75441b91858e9a7887017f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_232813618f854b328cda4709b9402bbd = $(`<div id="html_232813618f854b328cda4709b9402bbd" style="width: 100.0%; height: 100.0%;">Name:Eagle Lake Field   Status:Holocene?   Elev:1652.0</div>`)[0];
+            popup_ab145d032c75441b91858e9a7887017f.setContent(html_232813618f854b328cda4709b9402bbd);
+        
+
+        marker_5bccb83eb97043069c06a83e69b33d9a.bindPopup(popup_ab145d032c75441b91858e9a7887017f)
+        ;
+
+        
+    
+    
+            var marker_2875c979c130468bbad5722e56f8120d = L.marker(
+                [40.491901399999996, -121.5009995],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_678a3d4ef89a473bb42609dc3c4edb15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2875c979c130468bbad5722e56f8120d.setIcon(icon_678a3d4ef89a473bb42609dc3c4edb15);
+        
+    
+        var popup_4b922359ea5d4f6f8f86da6b3b6e5be1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9ac14c18ec2438c8a8b834aee985c43 = $(`<div id="html_d9ac14c18ec2438c8a8b834aee985c43" style="width: 100.0%; height: 100.0%;">Name:Lassen Volc Center   Status:Historical   Elev:3187.0</div>`)[0];
+            popup_4b922359ea5d4f6f8f86da6b3b6e5be1.setContent(html_d9ac14c18ec2438c8a8b834aee985c43);
+        
+
+        marker_2875c979c130468bbad5722e56f8120d.bindPopup(popup_4b922359ea5d4f6f8f86da6b3b6e5be1)
+        ;
+
+        
+    
+    
+            var marker_cea8766ab97a4ae1868e54db28c427b8 = L.marker(
+                [38.9698982, -122.7710037],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_35cbbd8a3e3a42069c788c7c40801009 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cea8766ab97a4ae1868e54db28c427b8.setIcon(icon_35cbbd8a3e3a42069c788c7c40801009);
+        
+    
+        var popup_19117ff72a364170b33acdd0f268e0a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_217d608b873f420d8971a8df1b46c6a5 = $(`<div id="html_217d608b873f420d8971a8df1b46c6a5" style="width: 100.0%; height: 100.0%;">Name:Clear Lake   Status:Holocene   Elev:1439.0</div>`)[0];
+            popup_19117ff72a364170b33acdd0f268e0a7.setContent(html_217d608b873f420d8971a8df1b46c6a5);
+        
+
+        marker_cea8766ab97a4ae1868e54db28c427b8.bindPopup(popup_19117ff72a364170b33acdd0f268e0a7)
+        ;
+
+        
+    
+    
+            var marker_6f4f71c349ee47d0ba67344065cee25a = L.marker(
+                [39.3749008, -119.7210007],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_a7ec91c2a9704956804c9613b7f95218 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6f4f71c349ee47d0ba67344065cee25a.setIcon(icon_a7ec91c2a9704956804c9613b7f95218);
+        
+    
+        var popup_c1481f3c2c3b4b008126b61b2bb7c4ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1279af359aa242d7867d8fa4c3c72a9e = $(`<div id="html_1279af359aa242d7867d8fa4c3c72a9e" style="width: 100.0%; height: 100.0%;">Name:Steamboat Springs   Status:Pleistocene-Fumarolic   Elev:1415.0</div>`)[0];
+            popup_c1481f3c2c3b4b008126b61b2bb7c4ab.setContent(html_1279af359aa242d7867d8fa4c3c72a9e);
+        
+
+        marker_6f4f71c349ee47d0ba67344065cee25a.bindPopup(popup_c1481f3c2c3b4b008126b61b2bb7c4ab)
+        ;
+
+        
+    
+    
+            var marker_ee4d7861d90f48e39915d6276f36b0ec = L.marker(
+                [39.6500015, -107.03099820000001],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_3f374055ab604f0fb5e67905856e54f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ee4d7861d90f48e39915d6276f36b0ec.setIcon(icon_3f374055ab604f0fb5e67905856e54f6);
+        
+    
+        var popup_6673df9ac3e842d0835f7c7445ed21f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d1e16abcc0b4895ab550c94ac4f41fa = $(`<div id="html_0d1e16abcc0b4895ab550c94ac4f41fa" style="width: 100.0%; height: 100.0%;">Name:Dotsero   Status:Radiocarbon   Elev:2230.0</div>`)[0];
+            popup_6673df9ac3e842d0835f7c7445ed21f2.setContent(html_0d1e16abcc0b4895ab550c94ac4f41fa);
+        
+
+        marker_ee4d7861d90f48e39915d6276f36b0ec.bindPopup(popup_6673df9ac3e842d0835f7c7445ed21f2)
+        ;
+
+        
+    
+    
+            var marker_2c6ee4dc282f4a539709f4a7b8809c09 = L.marker(
+                [37.9999008, -119.03099820000001],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_83485f052b674c2fadb0166ffb71983e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2c6ee4dc282f4a539709f4a7b8809c09.setIcon(icon_83485f052b674c2fadb0166ffb71983e);
+        
+    
+        var popup_3bccccb975004311937ba882f23932f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a13ec7917f148a8a233097b49e01db1 = $(`<div id="html_1a13ec7917f148a8a233097b49e01db1" style="width: 100.0%; height: 100.0%;">Name:Mono Lake Volc Field   Status:Tephrochronology   Elev:2121.0</div>`)[0];
+            popup_3bccccb975004311937ba882f23932f1.setContent(html_1a13ec7917f148a8a233097b49e01db1);
+        
+
+        marker_2c6ee4dc282f4a539709f4a7b8809c09.bindPopup(popup_3bccccb975004311937ba882f23932f1)
+        ;
+
+        
+    
+    
+            var marker_7cd6b5a292854f95941d88447cb0d7ef = L.marker(
+                [38.970001200000006, -112.5009995],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_89c3d881a4874135ad73675a33d10f46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7cd6b5a292854f95941d88447cb0d7ef.setIcon(icon_89c3d881a4874135ad73675a33d10f46);
+        
+    
+        var popup_8edf807ae4e74107bfa63a587bc2df02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_11510cda8ec541288588e450dd827629 = $(`<div id="html_11510cda8ec541288588e450dd827629" style="width: 100.0%; height: 100.0%;">Name:Black Rock Desert   Status:Radiocarbon   Elev:1800.0</div>`)[0];
+            popup_8edf807ae4e74107bfa63a587bc2df02.setContent(html_11510cda8ec541288588e450dd827629);
+        
+
+        marker_7cd6b5a292854f95941d88447cb0d7ef.bindPopup(popup_8edf807ae4e74107bfa63a587bc2df02)
+        ;
+
+        
+    
+    
+            var marker_6d1322ed5a744358b2315eb91e23858e = L.marker(
+                [37.8799019, -119.0009995],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_e681b333866043ee8b934ec03190f34a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6d1322ed5a744358b2315eb91e23858e.setIcon(icon_e681b333866043ee8b934ec03190f34a);
+        
+    
+        var popup_fb0849a82bec4c66ba9a6a1fc912478e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26f1dc9a94f24c2daf087f007a4d1c88 = $(`<div id="html_26f1dc9a94f24c2daf087f007a4d1c88" style="width: 100.0%; height: 100.0%;">Name:Mono Craters   Status:Radiocarbon   Elev:2796.0</div>`)[0];
+            popup_fb0849a82bec4c66ba9a6a1fc912478e.setContent(html_26f1dc9a94f24c2daf087f007a4d1c88);
+        
+
+        marker_6d1322ed5a744358b2315eb91e23858e.bindPopup(popup_fb0849a82bec4c66ba9a6a1fc912478e)
+        ;
+
+        
+    
+    
+            var marker_d2837279e8fc4fe49bec9f180d275437 = L.marker(
+                [37.6918983, -119.0210037],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_aa4c59bab4ef40d3bc0760c7ce804d43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d2837279e8fc4fe49bec9f180d275437.setIcon(icon_aa4c59bab4ef40d3bc0760c7ce804d43);
+        
+    
+        var popup_3b26353cd520450e9b70faca2f650131 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7cea76e79c374106a288fda973f2f1b7 = $(`<div id="html_7cea76e79c374106a288fda973f2f1b7" style="width: 100.0%; height: 100.0%;">Name:Inyo Craters   Status:Radiocarbon   Elev:2629.0</div>`)[0];
+            popup_3b26353cd520450e9b70faca2f650131.setContent(html_7cea76e79c374106a288fda973f2f1b7);
+        
+
+        marker_d2837279e8fc4fe49bec9f180d275437.bindPopup(popup_3b26353cd520450e9b70faca2f650131)
+        ;
+
+        
+    
+    
+            var marker_a5a7dd2a8cf34d0681af92d88eafcccb = L.marker(
+                [37.6999016, -118.8710022],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_57745a5fcdad4245bdc17ac03dfb7e24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a5a7dd2a8cf34d0681af92d88eafcccb.setIcon(icon_57745a5fcdad4245bdc17ac03dfb7e24);
+        
+    
+        var popup_ac5385fe6f824165a3ac0e7b89ad1dfa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ffdda9e7c0c4097bff6d545be211dc1 = $(`<div id="html_8ffdda9e7c0c4097bff6d545be211dc1" style="width: 100.0%; height: 100.0%;">Name:Long Valley   Status:Pleistocene-Fumarolic   Elev:3390.0</div>`)[0];
+            popup_ac5385fe6f824165a3ac0e7b89ad1dfa.setContent(html_8ffdda9e7c0c4097bff6d545be211dc1);
+        
+
+        marker_a5a7dd2a8cf34d0681af92d88eafcccb.bindPopup(popup_ac5385fe6f824165a3ac0e7b89ad1dfa)
+        ;
+
+        
+    
+    
+            var marker_a15cdf617558490f92c5ef0c8f5843f1 = L.marker(
+                [37.579898799999995, -119.0510025],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_f483507cc59f400b835b85dab7ffc20f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a15cdf617558490f92c5ef0c8f5843f1.setIcon(icon_f483507cc59f400b835b85dab7ffc20f);
+        
+    
+        var popup_6ecc47fc26c64292b74eddca4af43956 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d0b950f6b2646a7a8dc35d16606bfe0 = $(`<div id="html_2d0b950f6b2646a7a8dc35d16606bfe0" style="width: 100.0%; height: 100.0%;">Name:Red Cones   Status:Radiocarbon   Elev:2748.0</div>`)[0];
+            popup_6ecc47fc26c64292b74eddca4af43956.setContent(html_2d0b950f6b2646a7a8dc35d16606bfe0);
+        
+
+        marker_a15cdf617558490f92c5ef0c8f5843f1.bindPopup(popup_6ecc47fc26c64292b74eddca4af43956)
+        ;
+
+        
+    
+    
+            var marker_58fc3b68fb89436ba5b2df8277c719a0 = L.marker(
+                [37.0199013, -117.45099640000001],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_a7fc82364c704000a0a08e6421f0750a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_58fc3b68fb89436ba5b2df8277c719a0.setIcon(icon_a7fc82364c704000a0a08e6421f0750a);
+        
+    
+        var popup_ecdc966d8117419aab3c288658d007d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_99d41aca1cf44a51a3617a3924fd1d9b = $(`<div id="html_99d41aca1cf44a51a3617a3924fd1d9b" style="width: 100.0%; height: 100.0%;">Name:Ubehebe Craters   Status:Anthropology   Elev:752.0</div>`)[0];
+            popup_ecdc966d8117419aab3c288658d007d8.setContent(html_99d41aca1cf44a51a3617a3924fd1d9b);
+        
+
+        marker_58fc3b68fb89436ba5b2df8277c719a0.bindPopup(popup_ecdc966d8117419aab3c288658d007d8)
+        ;
+
+        
+    
+    
+            var marker_a29643a8226d410e916a566124b3cc60 = L.marker(
+                [37.5800018, -112.6709976],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_ab7b0f377a714c4c809b3a32bd140368 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a29643a8226d410e916a566124b3cc60.setIcon(icon_ab7b0f377a714c4c809b3a32bd140368);
+        
+    
+        var popup_29bff135ecb54ef4aec6b4dcdc5e09bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f40831e237d644b084e204b8511e90ec = $(`<div id="html_f40831e237d644b084e204b8511e90ec" style="width: 100.0%; height: 100.0%;">Name:Markagunt Plateau   Status:Dendrochronology   Elev:2840.0</div>`)[0];
+            popup_29bff135ecb54ef4aec6b4dcdc5e09bc.setContent(html_f40831e237d644b084e204b8511e90ec);
+        
+
+        marker_a29643a8226d410e916a566124b3cc60.bindPopup(popup_29bff135ecb54ef4aec6b4dcdc5e09bc)
+        ;
+
+        
+    
+    
+            var marker_f052f06e088343348a96d81abaa4e72c = L.marker(
+                [37.257, -113.6210022],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_fc1de7de502a4dfb9c59cb38b1020489 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f052f06e088343348a96d81abaa4e72c.setIcon(icon_fc1de7de502a4dfb9c59cb38b1020489);
+        
+    
+        var popup_6caf1d5d15e4455dbf1635ab9d4682a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76b151f088a54442b4eeaa3ab8a53904 = $(`<div id="html_76b151f088a54442b4eeaa3ab8a53904" style="width: 100.0%; height: 100.0%;">Name:Santa Clara   Status:Holocene?   Elev:1465.0</div>`)[0];
+            popup_6caf1d5d15e4455dbf1635ab9d4682a5.setContent(html_76b151f088a54442b4eeaa3ab8a53904);
+        
+
+        marker_f052f06e088343348a96d81abaa4e72c.bindPopup(popup_6caf1d5d15e4455dbf1635ab9d4682a5)
+        ;
+
+        
+    
+    
+            var marker_8828a63cd69f471db66014b1dda194ac = L.marker(
+                [37.32799910000001, -112.40100100000001],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_43a39822dab64f34983b63dbe82957e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8828a63cd69f471db66014b1dda194ac.setIcon(icon_43a39822dab64f34983b63dbe82957e9);
+        
+    
+        var popup_08400767ed794f2d953765fa04957d62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_375220a220fd4cf4a208041495efa2a0 = $(`<div id="html_375220a220fd4cf4a208041495efa2a0" style="width: 100.0%; height: 100.0%;">Name:Bald Knoll   Status:Holocene   Elev:2135.0</div>`)[0];
+            popup_08400767ed794f2d953765fa04957d62.setContent(html_375220a220fd4cf4a208041495efa2a0);
+        
+
+        marker_8828a63cd69f471db66014b1dda194ac.bindPopup(popup_08400767ed794f2d953765fa04957d62)
+        ;
+
+        
+    
+    
+            var marker_0d688dc19896496294e3993df0787fa6 = L.marker(
+                [36.3578987, -118.3209991],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_6f93e93ed00145f49a8a9689ec972ab4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0d688dc19896496294e3993df0787fa6.setIcon(icon_6f93e93ed00145f49a8a9689ec972ab4);
+        
+    
+        var popup_3deb43b64fa1477d88c94a711d9ca3ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78a8521620c741beb61c8dce0ff74407 = $(`<div id="html_78a8521620c741beb61c8dce0ff74407" style="width: 100.0%; height: 100.0%;">Name:Golden Trout Creek   Status:Tephrochronology   Elev:2886.0</div>`)[0];
+            popup_3deb43b64fa1477d88c94a711d9ca3ef.setContent(html_78a8521620c741beb61c8dce0ff74407);
+        
+
+        marker_0d688dc19896496294e3993df0787fa6.bindPopup(popup_3deb43b64fa1477d88c94a711d9ca3ef)
+        ;
+
+        
+    
+    
+            var marker_d92eabbfd72e410a8443403cae8be29f = L.marker(
+                [36.02989960000001, -117.8209991],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_cd4fd00ba2cd4e95967559e256283704 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d92eabbfd72e410a8443403cae8be29f.setIcon(icon_cd4fd00ba2cd4e95967559e256283704);
+        
+    
+        var popup_5b0fd8cce3b640febe3f647527441e7b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2cf38fad221b44ae82a99f6b6517ca1e = $(`<div id="html_2cf38fad221b44ae82a99f6b6517ca1e" style="width: 100.0%; height: 100.0%;">Name:Coso Volc Field   Status:Holocene?   Elev:2400.0</div>`)[0];
+            popup_5b0fd8cce3b640febe3f647527441e7b.setContent(html_2cf38fad221b44ae82a99f6b6517ca1e);
+        
+
+        marker_d92eabbfd72e410a8443403cae8be29f.bindPopup(popup_5b0fd8cce3b640febe3f647527441e7b)
+        ;
+
+        
+    
+    
+            var marker_4e552e7163734bd9963323c29c40c7ba = L.marker(
+                [36.3800011, -113.1309967],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_31853c1344984097a348d80eb499bc43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4e552e7163734bd9963323c29c40c7ba.setIcon(icon_31853c1344984097a348d80eb499bc43);
+        
+    
+        var popup_2b313ecae1054d929d24b8eb5a2ab610 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9dd6a4e3b15e401cbeff95655efd38c9 = $(`<div id="html_9dd6a4e3b15e401cbeff95655efd38c9" style="width: 100.0%; height: 100.0%;">Name:Uinkaret Field   Status:Anthropology   Elev:1555.0</div>`)[0];
+            popup_2b313ecae1054d929d24b8eb5a2ab610.setContent(html_9dd6a4e3b15e401cbeff95655efd38c9);
+        
+
+        marker_4e552e7163734bd9963323c29c40c7ba.bindPopup(popup_2b313ecae1054d929d24b8eb5a2ab610)
+        ;
+
+        
+    
+    
+            var marker_511e0a04daa34c5b9db5ca0ec5c873de = L.marker(
+                [34.75, -116.6210022],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_4e47f056c2894670920654a93210447d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_511e0a04daa34c5b9db5ca0ec5c873de.setIcon(icon_4e47f056c2894670920654a93210447d);
+        
+    
+        var popup_1921974dba6c43e6983b8578ee8d1b16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0bc619e9d2ee4a1cb96c72eb41bc07a4 = $(`<div id="html_0bc619e9d2ee4a1cb96c72eb41bc07a4" style="width: 100.0%; height: 100.0%;">Name:Lavic Lake   Status:Holocene?   Elev:1495.0</div>`)[0];
+            popup_1921974dba6c43e6983b8578ee8d1b16.setContent(html_0bc619e9d2ee4a1cb96c72eb41bc07a4);
+        
+
+        marker_511e0a04daa34c5b9db5ca0ec5c873de.bindPopup(popup_1921974dba6c43e6983b8578ee8d1b16)
+        ;
+
+        
+    
+    
+            var marker_5d5b1b90ce0544ef87c877772d0d848b = L.marker(
+                [35.8699989, -106.5709991],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_50227318f21f42c28776935e4333c700 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5d5b1b90ce0544ef87c877772d0d848b.setIcon(icon_50227318f21f42c28776935e4333c700);
+        
+    
+        var popup_65ad57ead6b4469a936a560b8510eeee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8aebfa2b2d394bc18b2247af38d58f72 = $(`<div id="html_8aebfa2b2d394bc18b2247af38d58f72" style="width: 100.0%; height: 100.0%;">Name:Valles Caldera   Status:Pleistocene-Fumarolic   Elev:3430.0</div>`)[0];
+            popup_65ad57ead6b4469a936a560b8510eeee.setContent(html_8aebfa2b2d394bc18b2247af38d58f72);
+        
+
+        marker_5d5b1b90ce0544ef87c877772d0d848b.bindPopup(popup_65ad57ead6b4469a936a560b8510eeee)
+        ;
+
+        
+    
+    
+            var marker_bf513916c8724ad3b4c6615a09698a04 = L.marker(
+                [35.3699989, -111.5009995],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_de387da3275c4c33ab23d42deab15246 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bf513916c8724ad3b4c6615a09698a04.setIcon(icon_de387da3275c4c33ab23d42deab15246);
+        
+    
+        var popup_96bb4241ec35475e807974beeacaf9b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_667eda4531f74c9680b4cc4dc6e847de = $(`<div id="html_667eda4531f74c9680b4cc4dc6e847de" style="width: 100.0%; height: 100.0%;">Name:Sunset Crater   Status:Dendrochronology   Elev:2447.0</div>`)[0];
+            popup_96bb4241ec35475e807974beeacaf9b5.setContent(html_667eda4531f74c9680b4cc4dc6e847de);
+        
+
+        marker_bf513916c8724ad3b4c6615a09698a04.bindPopup(popup_96bb4241ec35475e807974beeacaf9b5)
+        ;
+
+        
+    
+    
+            var marker_d6fb00f640e14328bc2ca48939d72500 = L.marker(
+                [34.5499992, -115.78099820000001],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_e312d39d0b8c4abf8154ede5ab8ab85b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d6fb00f640e14328bc2ca48939d72500.setIcon(icon_e312d39d0b8c4abf8154ede5ab8ab85b);
+        
+    
+        var popup_ff19cd1124164d4aa3030f553f7d1c9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f99d81a64e241a7b6ce06bab1a37484 = $(`<div id="html_5f99d81a64e241a7b6ce06bab1a37484" style="width: 100.0%; height: 100.0%;">Name:Amboy   Status:Holocene   Elev:288.0</div>`)[0];
+            popup_ff19cd1124164d4aa3030f553f7d1c9d.setContent(html_5f99d81a64e241a7b6ce06bab1a37484);
+        
+
+        marker_d6fb00f640e14328bc2ca48939d72500.bindPopup(popup_ff19cd1124164d4aa3030f553f7d1c9d)
+        ;
+
+        
+    
+    
+            var marker_bbf7014d4e9b4da69214cc84c2dbc300 = L.marker(
+                [34.7999992, -108.0009995],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_bd2091f6a8a34fcba67f9004c9f6eb08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bbf7014d4e9b4da69214cc84c2dbc300.setIcon(icon_bd2091f6a8a34fcba67f9004c9f6eb08);
+        
+    
+        var popup_828aefec31d147dbbd117736b7d17bd5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_745440c4216b44a0be0528f576bda0fe = $(`<div id="html_745440c4216b44a0be0528f576bda0fe" style="width: 100.0%; height: 100.0%;">Name:Zuni-Bandera   Status:Anthropology   Elev:2550.0</div>`)[0];
+            popup_828aefec31d147dbbd117736b7d17bd5.setContent(html_745440c4216b44a0be0528f576bda0fe);
+        
+
+        marker_bbf7014d4e9b4da69214cc84c2dbc300.bindPopup(popup_828aefec31d147dbbd117736b7d17bd5)
+        ;
+
+        
+    
+    
+            var marker_2da22e26901740d9a7ace512fbef6c0e = L.marker(
+                [33.7801018, -105.9309998],
+                {}
+            ).addTo(feature_group_3c8aeade7c3c48499cc998ca596d7686);
+        
+    
+            var icon_20ea028fa6004c38a71055f0c66a1597 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon-picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2da22e26901740d9a7ace512fbef6c0e.setIcon(icon_20ea028fa6004c38a71055f0c66a1597);
+        
+    
+        var popup_51d7484b555a4cf5a7806bf481182f83 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b77075f6a7b4e0ba8a2572bf2398f31 = $(`<div id="html_7b77075f6a7b4e0ba8a2572bf2398f31" style="width: 100.0%; height: 100.0%;">Name:Carrizozo   Status:Holocene   Elev:1731.0</div>`)[0];
+            popup_51d7484b555a4cf5a7806bf481182f83.setContent(html_7b77075f6a7b4e0ba8a2572bf2398f31);
+        
+
+        marker_2da22e26901740d9a7ace512fbef6c0e.bindPopup(popup_51d7484b555a4cf5a7806bf481182f83)
+        ;
+
+        
+    
+</script>
