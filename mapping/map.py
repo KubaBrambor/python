@@ -21,7 +21,7 @@ for coordinates in multiCoordinates:
     i += 1
 
 for lt, ln, nm, st, ev in zip(lat, lon, name, status, elev):
-    fg.add_child(folium.Marker(location=[lt, ln], popup=f'Name:{nm} \n Status:{st} \n Elev:{ev}', icon=folium.Icon(color='red', icon='glyphicon-picture', prefix='glyphicon')))
+    fg.add_child(folium.Marker(location=[lt, ln], popup=f'Name:{nm} \n Status:{st} \n Elev:{ev} m', icon=folium.Icon(color='red', icon='glyphicon-picture', prefix='glyphicon')))
 
 map.add_child(fg)
 
