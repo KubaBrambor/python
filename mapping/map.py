@@ -50,24 +50,27 @@ def fillColor(x):
         return '#800000'
         
 i = 0
-map = folium.Map(location=[51.130197, 16.961561], zoom_start=12)
+m = folium.Map(location=[51.130197, 16.961561], zoom_start=12)
 
-fg = folium.FeatureGroup(name="My Map")
+fgv = folium.FeatureGroup(name="Volcanoes & Houses")
 
 
 for coordinates in multiCoordinates:
     iframe = folium.IFrame(html=homes_popup % (popups[i]), width=150, height=50)
-    fg.add_child(folium.Marker(location=coordinates, popup=folium.Popup(iframe), icon=folium.Icon(color='green', icon='glyphicon-home', prefix='glyphicon')))
+    fgv.add_child(folium.Marker(location=coordinates, popup=folium.Popup(iframe), icon=folium.Icon(color='green', icon='glyphicon-home', prefix='glyphicon')))
     i += 1
 
 for lt, ln, nm, st, ev in zip(lat, lon, name, status, elev):
     iframe = folium.IFrame(html=html_popup % (nm, str(ev), st), width=150, height=200)
-    fg.add_child(folium.CircleMarker(location=[lt, ln], radius=10, popup=folium.Popup(iframe), color=color_elevation(ev), fill=True, fill_color=color_elevation(ev), fill_opacity=0.8))
+    fgv.add_child(folium.CircleMarker(location=[lt, ln], radius=10, popup=folium.Popup(iframe), color=color_elevation(ev), fill=True, fill_color=color_elevation(ev), fill_opacity=0.8))
 
-fg.add_child(folium.GeoJson(data=open('world.json', 'r', encoding='utf-8-sig').read(), 
+
+fgp = folium.FeatureGroup(name="Popoulation")
+fgp.add_child(folium.GeoJson(data=open('world.json', 'r', encoding='utf-8-sig').read(), 
 style_function=lambda x: {'fillColor': fillColor(x),
                           'weight': 1 }))
 
-map.add_child(fg)
-
-map.save("Map3.html")
+m.add_child(fgv)
+m.add_child(fgp)
+m.add_child(folium.LayerControl())
+m.save("Map3.html")
