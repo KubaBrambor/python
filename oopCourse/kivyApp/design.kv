@@ -19,6 +19,20 @@
                 text: "Sign Up"
                 on_press: root.sign_up()
 
-<RootWidget>:
-    LoginScreen:
-        name: "login_screen"
+<SignUpScreen>:
+    GridLayout:
+        cols: 1
+        Label:
+            text: "Sign up for app!"
+        TextInput:
+            hint_text: "Username"
+        TextInput:
+            hint_text: "Password"
+        Button:
+            text: "Sign up"
+
+# <RootWidget>:
+#     LoginScreen:
+#         name: "login_screen"
+#     SignUpScreen:
+#         name: "sign_up_screen"
