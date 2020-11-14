@@ -11,7 +11,8 @@ class LoginScreen(Screen):
         self.manager.current = "sign_up_screen"
 
 class SignUpScreen(Screen):
-    pass
+    def add_user(self, username, password):
+        print(username, password)
 
 # one way to add widgets
 # class RootWidget(ScreenManager):
