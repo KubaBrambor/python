@@ -2,6 +2,8 @@ import kivy
 from kivy.app import App 
 from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen, RiseInTransition, ShaderTransition, SlideTransition
+import json
+from datetime import datetime
 
 Builder.load_file('design.kv')
 
@@ -13,6 +15,17 @@ class LoginScreen(Screen):
 class SignUpScreen(Screen):
     def add_user(self, username, password):
         print(username, password)
+        with open("users.json") as file:
+            users = json.load(file)
+            print(users)
+        users[username] = {
+                "username": username,
+                "password": password,
+                "created": datetime.now().strftime("%Y-%M-%D %H-%M-%S")
+            }
+        print(users)
+        with open("users.json", 'w') as file:
+            json.dump(users, file)
 
 # one way to add widgets
 # class RootWidget(ScreenManager):
