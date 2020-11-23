@@ -26,6 +26,11 @@ class SignUpScreen(Screen):
         print(users)
         with open("users.json", 'w') as file:
             json.dump(users, file)
+        self.manager.current = "sign_up_screen_success"
+
+class SignUpScreenSuccess(Screen):
+    def go_to_login(self):
+        self.manager.current = "login_screen"
 
 # one way to add widgets
 # class RootWidget(ScreenManager):
@@ -35,6 +40,7 @@ class SignUpScreen(Screen):
 sm = ScreenManager()
 sm.add_widget(LoginScreen(name="login_screen"))
 sm.add_widget(SignUpScreen(name="sign_up_screen")) 
+sm.add_widget(SignUpScreenSuccess(name="sign_up_screen_success"))
 
 class MainApp(App):
     def build(self):
