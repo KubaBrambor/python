@@ -1,7 +1,7 @@
 import kivy 
 from kivy.app import App 
 from kivy.lang import Builder
-from kivy.uix.screenmanager import ScreenManager, Screen, RiseInTransition, ShaderTransition, SlideTransition
+from kivy.uix.screenmanager import ScreenManager, Screen, RiseInTransition, ShaderTransition, SlideTransition, SwapTransition
 import json
 from datetime import datetime
 
@@ -10,6 +10,7 @@ Builder.load_file('design.kv')
 class LoginScreen(Screen):
     def sign_up(self):
         print("Sign up button clicked.")
+        self.manager.transition = SwapTransition()
         self.manager.current = "sign_up_screen"
 
 class SignUpScreen(Screen):
@@ -26,10 +27,13 @@ class SignUpScreen(Screen):
         print(users)
         with open("users.json", 'w') as file:
             json.dump(users, file)
+        self.manager.transition = SlideTransition()
         self.manager.current = "sign_up_screen_success"
 
 class SignUpScreenSuccess(Screen):
     def go_to_login(self):
+        self.manager.transition = SwapTransition()
+        # self.manager.transition.direction = 'right'
         self.manager.current = "login_screen"
 
 # one way to add widgets
