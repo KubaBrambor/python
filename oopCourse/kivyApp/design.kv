@@ -4,13 +4,17 @@
         GridLayout:
             cols: 1
             Label:
+                id: title
                 text: "User Login"
             TextInput:
+                id: username
                 hint_text: "Username"
             TextInput:
+                id: password
                 hint_text: "Password"
             Button:
                 text: "Login"
+                on_press: root.login(root.ids.username.text, root.ids.password.text)
         GridLayout:
             cols: 2
             Button:
@@ -43,6 +47,23 @@
             text: "Go to log in"
             on_release: 
                 root.go_to_login()
+
+<LoginScreenSuccess>:
+    GridLayout:
+        cols: 1
+        Button:
+            text: "Logout"
+            on_press: root.log_out()
+        Label:
+            text: "How do you feel?"
+        TextInput:
+            hint_text: "Describe your mood."
+        Button:
+            text: "Generate"
+        Label:
+            text: ""
+
+
 # one way to add widgets
 # <RootWidget>:
 #     LoginScreen:
