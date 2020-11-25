@@ -53,13 +53,13 @@ class LoginScreenSuccess(Screen):
     def log_out(self):
         self.manager.transition = SlideTransition(direction="right")
         self.manager.current = "login_screen"
-    def quote_generator(self, mood_file):
+    def quote_generator(self, mood_file):      # read file given in function parameter
         with open(f"quotes/{mood_file}") as file:
             quotes = file.read()
-            quotes_split = quotes.splitlines()
-        quotes_len = len(quotes_split)-1
-        random_int = random.randint(0, quotes_len)
-        self.ids.quote_label.text = quotes_split[random_int]
+        quotes_split = quotes.splitlines() # splitting text by new lines
+        # quotes_len = len(quotes_split)-1        
+        # random_int = random.randint(0, quotes_len) # create random int based on quotes_split length
+        self.ids.quote_label.text = random.choice(quotes_split)
 
 # one way to add widgets
 # class RootWidget(ScreenManager):
