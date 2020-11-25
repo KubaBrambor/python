@@ -61,29 +61,34 @@
         GridLayout:
             cols: 3
             Button:
-                on_press: root.sad_face()
+                on_press: root.quote_generator("happy.txt")
                 Image:
-                    source: 'images/sad.png'
-                    y: self.parent.y + self.parent.height - 150
-                    x: self.parent.x + 85
+                    center: self.parent.center
+                    source: 'images/smile.png'
+                    # y: self.parent.y + self.parent.height - 150
+                    # x: self.parent.x + 85
             Button:
-                on_press: root.sad_face()
+                on_press: root.quote_generator("sad.txt")
                 Image:
-                    source: 'images/sad.png'
-                    y: self.parent.y + self.parent.height - 150
-                    x: self.parent.x + 85
+                    center: self.parent.center
+                    source: 'images/sad2.png'
+                    # y: self.parent.y + self.parent.height - 150
+                    # x: self.parent.x + 85
             Button:
-                on_press: root.sad_face()
+                on_press: root.quote_generator("unloved.txt")
                 Image:
-                    source: 'images/sad.png'
-                    y: self.parent.y + self.parent.height - 150
-                    x: self.parent.x + 85
+                    center: self.parent.center
+                    source: 'images/loved.png'
+                    # y: self.parent.y + self.parent.height - 150
+                    # x: self.parent.x + 85
         GridLayout:
             cols: 1
             Label:
                 id: quote_label
                 text: ""
-            
+                size: 900, 100
+                text_size: 700, 80
+
 
 
 # one way to add widgets

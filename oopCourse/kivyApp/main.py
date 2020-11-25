@@ -1,4 +1,5 @@
 import kivy 
+import random
 from kivy.app import App 
 from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen, RiseInTransition, ShaderTransition, SlideTransition, SwapTransition
@@ -52,8 +53,13 @@ class LoginScreenSuccess(Screen):
     def log_out(self):
         self.manager.transition = SlideTransition(direction="right")
         self.manager.current = "login_screen"
-    def sad_face(self):
-        print("Sad face")
+    def quote_generator(self, mood_file):
+        with open(f"quotes/{mood_file}") as file:
+            quotes = file.read()
+            quotes_split = quotes.splitlines()
+        quotes_len = len(quotes_split)-1
+        random_int = random.randint(0, quotes_len)
+        self.ids.quote_label.text = quotes_split[random_int]
 
 # one way to add widgets
 # class RootWidget(ScreenManager):
