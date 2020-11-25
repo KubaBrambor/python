@@ -51,19 +51,39 @@
 <LoginScreenSuccess>:
     GridLayout:
         cols: 1
-        Button:
-            text: "Logout"
-            on_press: root.log_out()
-        Label:
-            text: "How do you feel?"
-        Button:
-            on_press: root.sad_face()
-            Image:
-                source: 'images/sad.png'
-                y: self.parent.y + self.parent.height - 125
-                x: self.parent.x
-        Label:
-            text: ""
+        GridLayout:
+            cols: 1
+            Button:
+                text: "Logout"
+                on_press: root.log_out()
+            Label:
+                text: "How do you feel?"
+        GridLayout:
+            cols: 3
+            Button:
+                on_press: root.sad_face()
+                Image:
+                    source: 'images/sad.png'
+                    y: self.parent.y + self.parent.height - 150
+                    x: self.parent.x + 85
+            Button:
+                on_press: root.sad_face()
+                Image:
+                    source: 'images/sad.png'
+                    y: self.parent.y + self.parent.height - 150
+                    x: self.parent.x + 85
+            Button:
+                on_press: root.sad_face()
+                Image:
+                    source: 'images/sad.png'
+                    y: self.parent.y + self.parent.height - 150
+                    x: self.parent.x + 85
+        GridLayout:
+            cols: 1
+            Label:
+                id: quote_label
+                text: ""
+            
 
 
 # one way to add widgets
