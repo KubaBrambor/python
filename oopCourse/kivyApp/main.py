@@ -19,7 +19,7 @@ class LoginScreen(Screen):
             users = json.load(file)
         if username in users.keys():
             if users[username]["password"] == password:
-                self.manager.current = "sign_up_screen_success"
+                self.manager.current = "login_screen_success"
             else:
                 self.ids.title.text = "Password is incorrect!"
         else:
@@ -52,6 +52,8 @@ class LoginScreenSuccess(Screen):
     def log_out(self):
         self.manager.transition = SlideTransition(direction="right")
         self.manager.current = "login_screen"
+    def sad_face(self):
+        print("Sad face")
 
 # one way to add widgets
 # class RootWidget(ScreenManager):

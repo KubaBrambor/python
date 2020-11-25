@@ -56,10 +56,12 @@
             on_press: root.log_out()
         Label:
             text: "How do you feel?"
-        TextInput:
-            hint_text: "Describe your mood."
         Button:
-            text: "Generate"
+            on_press: root.sad_face()
+            Image:
+                source: 'images/sad.png'
+                y: self.parent.y + self.parent.height - 125
+                x: self.parent.x
         Label:
             text: ""
 
