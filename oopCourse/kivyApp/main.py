@@ -12,7 +12,6 @@ Builder.load_file('design.kv')
 class LoginScreen(Screen):
     def sign_up(self):
         print("Sign up button clicked.")
-        self.manager.transition = SwapTransition()
         self.manager.current = "sign_up_screen"
     
     def login(self, username, password):
@@ -46,13 +45,11 @@ class SignUpScreen(Screen):
 
 class SignUpScreenSuccess(Screen):
     def go_to_login(self):
-        self.manager.transition = SwapTransition()
         # self.manager.transition.direction = 'right'
         self.manager.current = "login_screen"
 
 class LoginScreenSuccess(Screen):
     def log_out(self):
-        # self.manager.transition = SlideTransition(direction="right")
         self.manager.current = "login_screen"
     def quote_generator(self, mood_file):      # read file given in function parameter
         with open(f"quotes/{mood_file}") as file:

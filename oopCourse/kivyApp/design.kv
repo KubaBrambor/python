@@ -63,6 +63,7 @@
         TextInput:
             id: password
             hint_text: "Password"
+            password: True
             font_size: "25sp"
         Button:
             text: "Sign up"
@@ -84,29 +85,38 @@
         cols: 1
         GridLayout:
             cols: 1
+            size_hint: 1, 0.8
+            padding: 15, 15
+            spacing: 15, 60
             Button:
                 text: "Logout"
                 on_press: root.log_out()
             Label:
                 text: "How do you feel?"
+                size_hint: 1, 0.3
         GridLayout:
             cols: 3
             Button:
                 on_press: root.quote_generator("happy.txt")
+                background_color: 1,1,1,0 
                 Image:
+                    size_hint: 0.5, 0.5
                     center: self.parent.center
                     source: 'images/smile.png'
                     # y: self.parent.y + self.parent.height - 150
                     # x: self.parent.x + 85
             Button:
                 on_press: root.quote_generator("sad.txt")
+                background_color: 1,1,1,0 
                 Image:
                     center: self.parent.center
                     source: 'images/sad2.png'
+
                     # y: self.parent.y + self.parent.height - 150
                     # x: self.parent.x + 85
             Button:
                 on_press: root.quote_generator("unloved.txt")
+                background_color: 1,1,1,0 
                 Image:
                     center: self.parent.center
                     source: 'images/loved.png'
