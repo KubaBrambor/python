@@ -21,6 +21,7 @@ class LoginScreen(Screen):
         if username in users.keys():
             if users[username]["password"] == password:
                 self.manager.current = "login_screen_success"
+                self.manager.transition = SlideTransition(direction="left")
             else:
                 self.ids.title.text = "Password is incorrect!"
         else:
@@ -51,7 +52,7 @@ class SignUpScreenSuccess(Screen):
 
 class LoginScreenSuccess(Screen):
     def log_out(self):
-        self.manager.transition = SlideTransition(direction="right")
+        # self.manager.transition = SlideTransition(direction="right")
         self.manager.current = "login_screen"
     def quote_generator(self, mood_file):      # read file given in function parameter
         with open(f"quotes/{mood_file}") as file:
