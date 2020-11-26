@@ -32,13 +32,19 @@
                 Button:
                     text: "Forgot Password?"
                     font_size: 0.12 * self.width
-                    size_hint: 0.4, 0.003 * self.width
+                    size_hint: (0.4, 0.003 * self.width)
                     pos_hint: {'center_x': 0.2, 'center_y': 0.2}
+                    background_color: 1,1,1,0
+                    color: 0.2, 0.5, 1, 1
+                    opacity: 1 if self.state == 'normal' else 0.5
                 Button:
                     text: "Sign Up"
                     font_size: 0.12 * self.width
                     size_hint: 0.4, 0.003 * self.width
                     pos_hint: {'center_x': 0.8, 'center_y': 0.2}
+                    background_color: 1,1,1,0
+                    color: 0.2, 0.5, 1, 1
+                    opacity: 1 if self.state == 'normal' else 0.5
                     on_press: root.sign_up()
 
 <SignUpScreen>:
