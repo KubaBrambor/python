@@ -3,25 +3,43 @@
         cols: 1
         GridLayout:
             cols: 1
+            padding: 15, 15
+            spacing: 20, 20
             Label:
                 id: title
                 text: "User Login"
+                font_size: "20sp"
             TextInput:
                 id: username
                 hint_text: "Username"
+                font_size: "25sp"
             TextInput:
                 id: password
                 hint_text: "Password"
-            Button:
-                text: "Login"
-                on_press: root.login(root.ids.username.text, root.ids.password.text)
+                font_size: "25sp"
+            RelativeLayout:
+                Button:
+                    text: "Login"
+                    font_size: 0.2 * self.width
+                    on_press: root.login(root.ids.username.text, root.ids.password.text)
+                    size_hint: 0.4, 0.004 * self.width
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.5}
         GridLayout:
             cols: 2
-            Button:
-                text: "Forgot Password?"
-            Button:
-                text: "Sign Up"
-                on_press: root.sign_up()
+            padding: 15, 15
+            size_hint: 1, 0.3
+            RelativeLayout:
+                Button:
+                    text: "Forgot Password?"
+                    font_size: 0.12 * self.width
+                    size_hint: 0.4, 0.003 * self.width
+                    pos_hint: {'center_x': 0.2, 'center_y': 0.2}
+                Button:
+                    text: "Sign Up"
+                    font_size: 0.12 * self.width
+                    size_hint: 0.4, 0.003 * self.width
+                    pos_hint: {'center_x': 0.8, 'center_y': 0.2}
+                    on_press: root.sign_up()
 
 <SignUpScreen>:
     GridLayout:
