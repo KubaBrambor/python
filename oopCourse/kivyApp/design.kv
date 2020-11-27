@@ -65,10 +65,13 @@
             hint_text: "Password"
             password: True
             font_size: "25sp"
-        Button:
-            text: "Sign up"
-            font_size: 0.12 * self.width
-            on_press: root.add_user(root.ids.username.text, root.ids.password.text)
+        RelativeLayout:
+            Button:
+                text: "Sign up"
+                font_size: 0.14 * self.width
+                size_hint: 0.5, 0.5
+                pos_hint: {'center_x': 0.5, 'center_y': 0.7}
+                on_press: root.add_user(root.ids.username.text, root.ids.password.text)
 
 <SignUpScreenSuccess>:
     GridLayout:
