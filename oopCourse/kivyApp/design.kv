@@ -91,9 +91,12 @@
             size_hint: 1, 0.8
             padding: 15, 15
             spacing: 15, 60
-            Button:
-                text: "Logout"
-                on_press: root.log_out()
+            RelativeLayout:
+                ImageButton:
+                    size_hint: 0.35, 0.35
+                    pos_hint: {'center_x': 0.93, 'center_y': 0.8}
+                    source: 'images/logout_hover.png' if self.hovered else "images/logout_nothover.png"
+                    on_press: root.log_out()
             Label:
                 text: "How do you feel?"
                 size_hint: 1, 0.3

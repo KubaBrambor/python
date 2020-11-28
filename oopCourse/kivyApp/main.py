@@ -1,10 +1,15 @@
+# APIT to aplhavantage.com FD6O0TA1HD6WBYR4.
+
 import kivy 
 import random
+import json
 from kivy.app import App 
 from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen, RiseInTransition, ShaderTransition, SlideTransition, SwapTransition
 from kivy.properties import StringProperty
-import json
+from hoverable import HoverBehavior
+from kivy.uix.image import Image
+from kivy.uix.behaviors import ButtonBehavior
 from datetime import datetime
 
 Builder.load_file('design.kv')
@@ -58,6 +63,9 @@ class LoginScreenSuccess(Screen):
         # quotes_len = len(quotes_split)-1        
         # random_int = random.randint(0, quotes_len) # create random int based on quotes_split length
         self.ids.quote_label.text = random.choice(quotes_split)
+
+class ImageButton(ButtonBehavior, HoverBehavior, Image):
+    pass
 
 # one way to add widgets
 # class RootWidget(ScreenManager):
