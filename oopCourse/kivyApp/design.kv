@@ -130,11 +130,15 @@
                     # x: self.parent.x + 85
         GridLayout:
             cols: 1
-            Label:
-                id: quote_label
-                text: ""
-                size: 900, 100
-                text_size: 700, 80
+            ScrollView:
+                Label:
+                    id: quote_label
+                    text: ""
+                    size: 900, 100
+                    padding: 15, 15
+                    text_size: self.width, None
+                    size_hint_y: None
+                    height: self.texture_size[1]
 
 
 
