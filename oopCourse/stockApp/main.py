@@ -15,10 +15,26 @@ from datetime import datetime
 Builder.load_file('design.kv')
 
 class LoginScreen(Screen):
+    def login(self, username, password):
+        with open("users.json") as file:
+            users = json.load(file)
+        if username in users.keys():
+            if users[username]['password'] == password:
+                self.manager.current = "main_screen"
+            else:
+                self.ids.login_title.text = "Wrong password!"
+        else:
+            self.ids.login_title.text = f"There is no user {username}"
+
+class MainScreen(Screen):
+    pass
+
+class ImageButton(ButtonBehavior, HoverBehavior, Image):
     pass
 
 sm = ScreenManager()
 sm.add_widget(LoginScreen(name="login_screen"))
+sm.add_widget(MainScreen(name="main_screen"))
 
 class MainApp(App):
     def build(self):

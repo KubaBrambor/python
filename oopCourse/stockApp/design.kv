@@ -13,3 +13,15 @@
                 id: password
                 hint_text: "Password"
                 password: True
+            RelativeLayout:
+                ImageButton:
+                    size_hint: 0.7, 0.7
+                    source: "images/loginOk.png" if self.hovered else "images/login.png"
+                    on_press: root.login(username=root.ids.username.text, password=root.ids.password.text)
+
+<MainScreen>:
+    GridLayout:
+        cols: 1
+        Label:
+            id: title_mainpage
+            text: "Welcome in Stock App!"
