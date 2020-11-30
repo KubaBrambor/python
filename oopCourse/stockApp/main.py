@@ -1,6 +1,6 @@
 # APIT to aplhavantage.com FD6O0TA1HD6WBYR4.
 # https://www.alphavantage.co/documentation/#
-
+# News Api key d360d65bebb442afbf30ca5cee551b8c
 import kivy, random, json, requests
 from kivy.app import App 
 from kivy.lang import Builder
@@ -26,7 +26,8 @@ class LoginScreen(Screen):
             self.ids.login_title.text = f"There is no user {username}"
 
 class MainScreen(Screen):
-    url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=IBM&apikey=FD6O0TA1HD6WBYR4."
+    time = datetime.now().strftime("%Y-%m-d%")
+    url = f'https://newsapi.org/v2/top-headlines?q=market&from={time}&apiKey=d360d65bebb442afbf30ca5cee551b8c'
     r = requests.get(url)
     data = r.json()
     def showStock(self):

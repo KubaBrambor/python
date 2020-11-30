@@ -22,9 +22,17 @@
 <MainScreen>:
     GridLayout:
         cols: 1
-        Label:
-            id: title_mainpage
-            text: "Welcome in Stock App!"
-        Button:
-            text: "show stock"
-            on_press: root.showStock()
+        GridLayout:
+            cols: 3
+            Button:
+                text: "Your stocks"
+                on_press: root.showStock()
+            Button: 
+                text: "Find stock"
+            Button:
+                text: "Wallet"
+        GridLayout:
+            cols: 3
+            Label:
+                id: apple
+                text: "Stock news"
