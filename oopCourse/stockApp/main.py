@@ -1,8 +1,7 @@
 # APIT to aplhavantage.com FD6O0TA1HD6WBYR4.
+# https://www.alphavantage.co/documentation/#
 
-import kivy 
-import random
-import json
+import kivy, random, json, requests
 from kivy.app import App 
 from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen, RiseInTransition, ShaderTransition, SlideTransition, SwapTransition
@@ -27,7 +26,11 @@ class LoginScreen(Screen):
             self.ids.login_title.text = f"There is no user {username}"
 
 class MainScreen(Screen):
-    pass
+    url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=IBM&apikey=FD6O0TA1HD6WBYR4."
+    r = requests.get(url)
+    data = r.json()
+    def showStock(self):
+        print(self.data)
 
 class ImageButton(ButtonBehavior, HoverBehavior, Image):
     pass
