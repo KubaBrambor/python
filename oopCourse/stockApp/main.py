@@ -30,8 +30,15 @@ class MainScreen(Screen):
     url = f'https://newsapi.org/v2/top-headlines?q=market&from={time}&apiKey=d360d65bebb442afbf30ca5cee551b8c'
     r = requests.get(url)
     data = r.json()
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.ids.title1.text = self.data['articles'][0]['title']
+        self.ids.text1.text = self.data['articles'][0]['description']
+        
+    
     def showStock(self):
-        print(self.data)
+        print(self.data['articles'][0]['title'])
+    
 
 class ImageButton(ButtonBehavior, HoverBehavior, Image):
     pass
