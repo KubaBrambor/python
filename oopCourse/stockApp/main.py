@@ -51,8 +51,7 @@ class MainScreen(Screen):
             # self.build_label(self.data['articles'][i]['description'])
         gridNavi.add_widget(gridNews)
         self.add_widget(gridNavi)
-        # self.ids.f"title + {i}".text = self.data['articles'][i]['title']
-        # self.ids.text1.text = self.data['articles'][i]['description']
+        
         
     
     def showStock(self):
