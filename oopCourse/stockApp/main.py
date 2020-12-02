@@ -9,6 +9,9 @@ from kivy.properties import StringProperty
 from hoverable import HoverBehavior
 from kivy.uix.image import Image
 from kivy.uix.behaviors import ButtonBehavior
+from kivy.uix.label import Label
+from kivy.uix.gridlayout import GridLayout
+from kivy.uix.button import Button
 from datetime import datetime
 
 Builder.load_file('design.kv')
@@ -32,12 +35,33 @@ class MainScreen(Screen):
     data = r.json()
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.ids.title1.text = self.data['articles'][0]['title']
-        self.ids.text1.text = self.data['articles'][0]['description']
+        #Layout one with navi buttons
+        gridNavi = GridLayout(cols=3)
+        gridNavi.add_widget(Button(text="Your stocks"))
+        gridNavi.add_widget(Button(text="Find stock"))
+        gridNavi.add_widget(Button(text="Wallet"))
+        
+        #Layout two with stock news
+        gridNews = GridLayout(cols=1)
+        for i in range(len(self.data['articles'])):
+            gridNews.add_widget(Label(text=self.data['articles'][i]['title']))
+            gridNews.add_widget(Label(text=self.data['articles'][i]['description']))
+            gridNews.add_widget(Button(text="Go to"))
+            # self.build_label(self.data['articles'][i]['title'])
+            # self.build_label(self.data['articles'][i]['description'])
+        gridNavi.add_widget(gridNews)
+        self.add_widget(gridNavi)
+        # self.ids.f"title + {i}".text = self.data['articles'][i]['title']
+        # self.ids.text1.text = self.data['articles'][i]['description']
         
     
     def showStock(self):
-        print(self.data['articles'][0]['title'])
+        print(self.data['articles'][0])
+        print(len(self.data['articles']))
+
+    def build_label(self, text):
+        label = Label(text=text)
+        return label
     
 
 class ImageButton(ButtonBehavior, HoverBehavior, Image):

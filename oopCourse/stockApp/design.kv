@@ -20,32 +20,7 @@
                     on_press: root.login(username=root.ids.username.text, password=root.ids.password.text)
 
 <MainScreen>:
-    GridLayout:
-        cols: 1
-        GridLayout:
-            cols: 3
-            Button:
-                text: "Your stocks"
-                on_press: root.showStock()
-            Button: 
-                text: "Find stock"
-            Button:
-                text: "Wallet"
-        GridLayout:
-            cols: 1
-            Label:
-                id: apple
-                text: "Stock news"
-            Label:
-                id: title1
-                text: ""
-            Label:
-                id: text1
-                text: ""
-            Button:
-                text: ""
-                on_press: pass
-            
+    
 
 
                 
