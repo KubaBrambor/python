@@ -7,7 +7,7 @@ from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen, RiseInTransition, ShaderTransition, SlideTransition, SwapTransition
 from kivy.properties import StringProperty
 from hoverable import HoverBehavior
-from kivy.uix.image import Image
+from kivy.uix.image import Image, AsyncImage
 from kivy.uix.behaviors import ButtonBehavior
 from kivy.uix.label import Label
 from kivy.uix.gridlayout import GridLayout
@@ -47,9 +47,10 @@ class MainScreen(Screen):
         gridNews = GridLayout(cols=1, size_hint_y=None)
         gridNews.bind(minimum_height=gridNews.setter('height'))
         for i in range(len(self.data['articles'])):
+            gridNews.add_widget(Image(source=self.data['articles'][i]['urlToImage']))
             gridNews.add_widget(Label(text=self.data['articles'][i]['title'], size_hint_y=None))
             gridNews.add_widget(Label(text=self.data['articles'][i]['description'], size_hint_y=None))
-            gridNews.add_widget(Button(text="Go to", on_press=print("ok")))
+            gridNews.add_widget(Button(text="Go to", on_press=lambda x: print(self.data['articles'][i]['url'])))
             # self.build_label(self.data['articles'][i]['title'])
             # self.build_label(self.data['articles'][i]['description'])
         scrollviewNews = ScrollView(size_hint=(1, None),size=(Window.width, Window.height))
