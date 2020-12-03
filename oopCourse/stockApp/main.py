@@ -12,6 +12,8 @@ from kivy.uix.behaviors import ButtonBehavior
 from kivy.uix.label import Label
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.button import Button
+from kivy.uix.scrollview import ScrollView
+from kivy.core.window import Window
 from datetime import datetime
 
 Builder.load_file('design.kv')
@@ -41,18 +43,20 @@ class MainScreen(Screen):
         gridNavi.add_widget(Button(text="Find stock"))
         gridNavi.add_widget(Button(text="Wallet"))
         
-        #Layout two with stock news
-        gridNews = GridLayout(cols=1)
+        #Layout two with stock 
+        gridNews = GridLayout(cols=1, size_hint_y=None)
+        gridNews.bind(minimum_height=gridNews.setter('height'))
         for i in range(len(self.data['articles'])):
-            gridNews.add_widget(Label(text=self.data['articles'][i]['title']))
-            gridNews.add_widget(Label(text=self.data['articles'][i]['description']))
-            gridNews.add_widget(Button(text="Go to"))
+            gridNews.add_widget(Label(text=self.data['articles'][i]['title'], size_hint_y=None))
+            gridNews.add_widget(Label(text=self.data['articles'][i]['description'], size_hint_y=None))
+            gridNews.add_widget(Button(text="Go to", on_press=print("ok")))
             # self.build_label(self.data['articles'][i]['title'])
             # self.build_label(self.data['articles'][i]['description'])
-        gridNavi.add_widget(gridNews)
+        scrollviewNews = ScrollView(size_hint=(1, None),size=(Window.width, Window.height))
+        scrollviewNews.add_widget(gridNews)
+        gridNavi.add_widget(scrollviewNews)
+       
         self.add_widget(gridNavi)
-        
-        
     
     def showStock(self):
         print(self.data['articles'][0])
