@@ -28,25 +28,27 @@
             size_hint: 1, 0.15
             RelativeLayout:
                 Button:
-                    text: "Your stocks"
+                    markup: True
+                    text: "[color=#428BFC][b]Your stocks[/b][/color]"
                     background_color: 1,1,1,0
-                    font_size: 0.14 * self.width
+                    font_size: 0.22 * self.width
                     size_hint: 0.3, 0.3
-                    pos_hint: {'center_x': 0.2, 'center_y': 0.8}
+                    pos_hint: {'center_x': 0.2, 'center_y': 0.7}
                     opacity: 1 if self.state == 'normal' else 0.5
                 Button:
-                    text: "Find stock"
-                    color: "white" if self.hovered == 'normal' else "blue"
+                    markup: True
+                    text: "[color=#428BFC][b]Find stock[/b][/color]"
                     background_color: 1,1,1,0
-                    font_size: 0.14 * self.width
+                    font_size: 0.22 * self.width
                     size_hint: 0.3, 0.3
-                    pos_hint: {'center_x': 0.8, 'center_y': 0.8}
+                    pos_hint: {'center_x': 0.8, 'center_y': 0.7}
                     opacity: 1 if self.state == 'normal' else 0.5
         GridLayout:
             cols: 1
             ScrollView:
                 Label:
                     id: gridNews
+                    markup: True
                     text: ""
                     text_size: self.width, None
                     padding: 15, 15

@@ -53,9 +53,9 @@ class MainScreen(Screen):
                 Rectangle(pos=self.pos, size=self.size)
 
         for i in range(len(self.data['articles'])):
-            newsTextList.append(self.data['articles'][i]['title'] + "\n" + \
-                        "source: " + self.data['articles'][i]['source']['name'] + "\n" + \
-                        self.data['articles'][i]['description'] + "\n \n \n")
+            newsTextList.append("[b][u][size=25]" + self.data['articles'][i]['title'] + "[/size][/u][/b]" + "\n" + \
+                        "[i][size=12]" + "source: " + self.data['articles'][i]['source']['name'] + "[/size][/i]" + "\n" + \
+                        "[size=20][color=#A8A8A8]" + self.data['articles'][i]['description'] + "[/color][/size]" + "\n \n \n")
         
         newsText = " ".join(newsTextList)
         print(newsText)
@@ -90,6 +90,9 @@ class MainScreen(Screen):
 
 class ImageButton(ButtonBehavior, HoverBehavior, Image):
     pass
+
+# class HoverButton(Button, HoverBehavior):
+#     pass
 
 sm = ScreenManager()
 sm.add_widget(LoginScreen(name="login_screen"))
