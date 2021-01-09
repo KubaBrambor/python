@@ -41,33 +41,43 @@ class MainScreen(Screen):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         #Layout one with navi buttons
-        gridNavi = GridLayout(cols=3)
-        gridNavi.add_widget(Button(text="Your stocks"))
-        gridNavi.add_widget(Button(text="Find stock"))
-        gridNavi.add_widget(Button(text="Wallet"))
-        
+        # gridNavi = GridLayout(cols=3)
+        # gridNavi.add_widget(Button(text="Your stocks"))
+        # gridNavi.add_widget(Button(text="Find stock"))
+        # gridNavi.add_widget(Button(text="Wallet"))
+        newsTextList = []
         def line(self):
             with self.canvas:
                 Line(points=(0, 1, 2, 3, 4, 5))
                 Color(1, 0, 0, .5, mode='rgba')
                 Rectangle(pos=self.pos, size=self.size)
 
-        #Layout two with stock 
-        gridNews = GridLayout(cols=1, size_hint_y=None, padding=(50,50))
-        gridNews.bind(minimum_height=gridNews.setter('height'))
         for i in range(len(self.data['articles'])):
-            gridNews.add_widget(Label(text=self.data['articles'][i]['title'], size_hint_y=None, size=(900,80), text_size=(200, None), font_size="20sp"))
-            gridNews.add_widget(Label(text=self.data['articles'][i]['source']['name'], size_hint_y=None, size=(900,30), text_size=(200, None), font_size="10sp"))
-            gridNews.add_widget(Label(padding=(5,50),text=self.data['articles'][i]['description'], size_hint_y=None, size=(900,200), text_size=(200, None), font_size="15sp"))
+            newsTextList.append(self.data['articles'][i]['title'] + "\n" + \
+                        "source: " + self.data['articles'][i]['source']['name'] + "\n" + \
+                        self.data['articles'][i]['description'] + "\n \n \n")
+        
+        newsText = " ".join(newsTextList)
+        print(newsText)
+        self.ids.gridNews.text = newsText
+
+        
+        #Layout two with stock 
+        # gridNews = GridLayout(cols=1, size_hint_y=None, padding=(50,50))
+        # gridNews.bind(minimum_height=gridNews.setter('height'))
+        # for i in range(len(self.data['articles'])):
+        #     gridNews.add_widget(Label(text=self.data['articles'][i]['title'], size_hint_y=None, size=(900,80), text_size=(200, None), font_size="20sp"))
+        #     gridNews.add_widget(Label(text=self.data['articles'][i]['source']['name'], size_hint_y=None, size=(900,30), text_size=(200, None), font_size="10sp"))
+        #     gridNews.add_widget(Label(padding=(5,50),text=self.data['articles'][i]['description'], size_hint_y=None, size=(900,200), text_size=(200, None), font_size="15sp"))
             
             # gridNews.add_widget(Widget(canvas=(Line(points=(0, 1, 2, 3, 4, 5)),Color(1, 0, 0, .5, mode='rgba'))))
             # gridNews.add_widget(Button(text="Go to", on_press=lambda x: print(self.data['articles'][i])))
             
         scrollviewNews = ScrollView(size_hint=(1, None),size=(Window.width, Window.height))
-        scrollviewNews.add_widget(gridNews)
-        gridNavi.add_widget(scrollviewNews)
+        # scrollviewNews.add_widget(gridNews)
+        # gridNavi.add_widget(scrollviewNews)
        
-        self.add_widget(gridNavi)
+        # self.add_widget(gridNavi)
     
     def showStock(self):
         print(self.data['articles'][0])

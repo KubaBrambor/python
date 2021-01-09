@@ -20,7 +20,33 @@
                     on_press: root.login(username=root.ids.username.text, password=root.ids.password.text)
 
 <MainScreen>:
-    
-
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols: 2
+            RelativeLayout:
+                Button:
+                    text: "Your stocks"
+                    background_color: 1,1,1,0
+                    font_size: 0.14 * self.width
+                    size_hint: 0.3, 0.3
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.7}
+            RelativeLayout:
+                Button:
+                    text: "Find stock"
+                    background_color: 1,1,1,0
+                    font_size: 0.14 * self.width
+                    size_hint: 0.3, 0.3
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.7}
+        GridLayout:
+            cols: 1
+            ScrollView:
+                Label:
+                    id: gridNews
+                    text: ""
+                    text_size: self.width, None
+                    padding: 15, 15
+                    size_hint_y: None
+                    height: self.texture_size[1]
 
                 
