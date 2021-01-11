@@ -40,11 +40,13 @@ class MainScreen(Screen):
     data = r.json()
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+        #stare
         #Layout one with navi buttons
         # gridNavi = GridLayout(cols=3)
         # gridNavi.add_widget(Button(text="Your stocks"))
         # gridNavi.add_widget(Button(text="Find stock"))
         # gridNavi.add_widget(Button(text="Wallet"))
+
         newsTextList = []
         def line(self):
             with self.canvas:
@@ -61,7 +63,7 @@ class MainScreen(Screen):
         print(newsText)
         self.ids.gridNews.text = newsText
 
-        
+        #stare, nie działało do końca
         #Layout two with stock 
         # gridNews = GridLayout(cols=1, size_hint_y=None, padding=(50,50))
         # gridNews.bind(minimum_height=gridNews.setter('height'))
