@@ -1,4 +1,4 @@
-# APIT to aplhavantage.com FD6O0TA1HD6WBYR4.
+# APIT to aplhavantage.com FD6O0TA1HD6WBYR4 oraz WAQH56GFEZKK7U8W
 # https://www.alphavantage.co/documentation/#
 # News Api key d360d65bebb442afbf30ca5cee551b8c
 import kivy, random, json, requests
@@ -88,7 +88,20 @@ class MainScreen(Screen):
     def build_label(self, text):
         label = Label(text=text)
         return label
+
+    def findStock(self):
+        self.manager.current = "findStock_screen"
+
+class FindStockScreen(Screen):
+    def mainScreen(self):
+        self.manager.current = "main_screen"
     
+    def searchForStocks(self, searchText):
+        url = f"https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords={searchText}&apikey=WAQH56GFEZKK7U8W"
+        r = requests.get(url)
+        data = r.json()
+        print(data)
+
 
 class ImageButton(ButtonBehavior, HoverBehavior, Image):
     pass
@@ -99,6 +112,7 @@ class ImageButton(ButtonBehavior, HoverBehavior, Image):
 sm = ScreenManager()
 sm.add_widget(LoginScreen(name="login_screen"))
 sm.add_widget(MainScreen(name="main_screen"))
+sm.add_widget(FindStockScreen(name="findStock_screen"))
 
 class MainApp(App):
     def build(self):
