@@ -107,20 +107,22 @@ class FindStockScreen(Screen):
         # print(data["bestMatches"])
 
     def printStocks(self, searchText):
-        if self.ids['stocksScrollView'].children:
-            self.ids['stocksScrollView'].remove_widget(self.ids['stocksScrollView'].children[0])
-        stocksLayout = GridLayout(cols=1, padding=(10,10), id="stocksLayout", size_hint_y=None)
-        stocksLayout.bind(minimum_height=stocksLayout.setter('height'))
+        stocksTextList = []
+        stocksText = ""
         self.searchForStocks(searchText)
-        print(self.stocksList[0]['2. name'])
+        if self.ids['gridStocks']:
+            self.ids['gridStocks'].text = ""
+        if not self.stocksList:
+            self.ids['gridStocks'].text = f"[b][size=25][color=#ff0000]There is no results for {searchText}[/color][/size][/b]"
+            print("if statement triggered")
+            return
+        print("this are stock list: ", self.stocksList)
         for i in range(len(self.stocksList)):
-            stocksTextList = []
             stocksTextList.append("[b][u][size=25]" + self.stocksList[i]['2. name'] + "[/size][/u][/b]" + "\n" + \
                         "[i][size=20]" + "symbol: " + self.stocksList[i]['1. symbol'] + "[/size][/i]" + "\n" + \
                         "[size=12][color=#A8A8A8]" + "region: " + self.stocksList[i]['4. region'] + "[/color][/size]" + "\n \n \n")
             stocksText = " ".join(stocksTextList)
-            stocksLayout.add_widget(Label(id=self.stocksList[i]['1. symbol'], markup=True, text=stocksText, text_size=(self.width, None), padding=(25,15), size_hint_y=None))
-        self.ids['stocksScrollView'].add_widget(stocksLayout)
+        self.ids['gridStocks'].text = stocksText
 
 
 

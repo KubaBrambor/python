@@ -61,8 +61,8 @@
         cols: 1
         GridLayout:
             cols: 2
-            padding: 5, 40
-            size_hint: 1, 0.15
+            padding: 5, 20
+            size_hint: 1, 0.2
             RelativeLayout:
                 Button:
                     markup: True
@@ -83,31 +83,61 @@
                     on_press: root.mainScreen()
         GridLayout:
             cols: 2
-            padding: 10, 0
-            size_hint: 1, 0.5
+            padding: 0, 0
+            size_hint: 1, 0.2
             RelativeLayout:
                 TextInput:
                     id: searchStock
                     hint_text: "Type stock"
-                    font_size: 35
-                    size_hint: 0.7, 0.2
+                    font_size: 25
+                    size_hint: 1, 0.5
                     padding: 15, 0
-                    pos_hint: {'center_x': 0.35, 'center_y': 0.7}
-                Button:
-                    markup: True
-                    text: "[color=#428BFC][b]Search[/b][/color]"
-                    background_color: 1,1,1,0
-                    font_size: 0.22 * self.width
-                    size_hint: 0.3, 0.1
-                    pos_hint: {'center_x': 0.85, 'center_y': 0.7}
-                    opacity: 1 if self.state == 'normal' else 0.5
-                    on_press: root.printStocks(searchText=root.ids.searchStock.text)
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.7}
+                    multiline: False
+                    on_text_validate: root.printStocks(searchText=root.ids.searchStock.text)
+                # Button:
+                #     markup: True
+                #     text: "[color=#428BFC][b]Search[/b][/color]"
+                #     background_color: 1,1,1,0
+                #     font_size: 0.22 * self.width
+                #     size_hint: 0.3, 0.1
+                #     pos_hint: {'center_x': 0.85, 'center_y': 0.7}
+                #     opacity: 1 if self.state == 'normal' else 0.5
+                #     on_press: root.printStocks(searchText=root.ids.searchStock.text)
         GridLayout:
             cols: 1
-            padding: 10, 0
+            padding: 0, 0
+            size_hint: 1, 1
+            ScrollView:
+                Label:
+                    id: gridStocks
+                    markup: True
+                    text: ""
+                    text_size: self.width, None
+                    padding: 15, 15
+                    size_hint_y: None
+                    height: self.texture_size[1]
+        GridLayout:
+            cols: 1
+            padding: 0, 0
+            size_hint: 1, 0.2
             RelativeLayout:
-                ScrollView:
-                    id: stocksScrollView
+                TextInput:
+                    id: addStock
+                    hint_text: "Add stock with symbol"
+                    font_size: 25
+                    size_hint: 1, 0.5
+                    padding: 15, 0
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.7}
+                # Button:
+                #     markup: True
+                #     text: "[color=#428BFC][b]Add Stock[/b][/color]"
+                #     background_color: 1,1,1,0
+                #     font_size: 0.22 * self.width
+                #     size_hint: 0.3, 0.1
+                #     pos_hint: {'center_x': 0.85, 'center_y': 0.7}
+                #     opacity: 1 if self.state == 'normal' else 0.5
+                #     on_press: root.printStocks(searchText=root.ids.searchStock.text)
 
 
                 
