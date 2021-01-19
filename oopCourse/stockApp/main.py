@@ -106,7 +106,11 @@ class FindStockScreen(Screen):
         self.stocksList = data["bestMatches"]
         # print(data["bestMatches"])
 
-    def printStocks(self, searchText): 
+    def printStocks(self, searchText):
+        if self.ids['stocksScrollView'].children:
+            self.ids['stocksScrollView'].remove_widget(self.ids['stocksScrollView'].children[0])
+        stocksLayout = GridLayout(cols=1, padding=(10,10), id="stocksLayout", size_hint_y=None)
+        stocksLayout.bind(minimum_height=stocksLayout.setter('height'))
         self.searchForStocks(searchText)
         print(self.stocksList[0]['2. name'])
         for i in range(len(self.stocksList)):
@@ -115,8 +119,11 @@ class FindStockScreen(Screen):
                         "[i][size=20]" + "symbol: " + self.stocksList[i]['1. symbol'] + "[/size][/i]" + "\n" + \
                         "[size=12][color=#A8A8A8]" + "region: " + self.stocksList[i]['4. region'] + "[/color][/size]" + "\n \n \n")
             stocksText = " ".join(stocksTextList)
-            self.ids['stocksScrollView'].add_widget(Label(id=self.stocksList[i]['1. symbol'], markup=True, text=stocksText, text_size=(self.width, None), padding=(15,15), size_hint_y=None))
-        
+            stocksLayout.add_widget(Label(id=self.stocksList[i]['1. symbol'], markup=True, text=stocksText, text_size=(self.width, None), padding=(25,15), size_hint_y=None))
+        self.ids['stocksScrollView'].add_widget(stocksLayout)
+
+
+
         # self.ids.stocksSearch.text = stocksText
     # def __init__(self, **kwargs):
     #     super().__init__(**kwargs)

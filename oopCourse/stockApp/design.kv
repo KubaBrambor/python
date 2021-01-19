@@ -61,7 +61,7 @@
         cols: 1
         GridLayout:
             cols: 2
-            padding: 10, 10
+            padding: 5, 40
             size_hint: 1, 0.15
             RelativeLayout:
                 Button:
@@ -84,12 +84,13 @@
         GridLayout:
             cols: 2
             padding: 10, 0
+            size_hint: 1, 0.5
             RelativeLayout:
                 TextInput:
                     id: searchStock
                     hint_text: "Type stock"
                     font_size: 35
-                    size_hint: 0.7, 0.1
+                    size_hint: 0.7, 0.2
                     padding: 15, 0
                     pos_hint: {'center_x': 0.35, 'center_y': 0.7}
                 Button:
@@ -104,16 +105,9 @@
         GridLayout:
             cols: 1
             padding: 10, 0
-            ScrollView:
-                id: stocksScrollView
-                Label:
-                    id: stocksSearch
-                    markup: True
-                    text: ""
-                    text_size: self.width, None
-                    padding: 15, 15
-                    size_hint_y: None
-                    height: self.texture_size[1]
+            RelativeLayout:
+                ScrollView:
+                    id: stocksScrollView
 
 
                 
